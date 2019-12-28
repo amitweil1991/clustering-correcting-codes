@@ -197,6 +197,8 @@ void distanceByOne(vector<int> num,  set<vector<int>>& numbers){
         }
         numbers.insert(index_j);
     }
+    num.insert(num.begin(), 1);
+    numbers.insert(num);
 }
 /*!
  * this function will helps us calculating S(e,i),  for each number in the given input_number set
@@ -355,14 +357,14 @@ void W_l_S_t_NoBruteForce(vector<vector<int>>& strands_data, int t, vector<int>&
 
 
 /*!
- * Function for creating B set which is : B = {(i, j) | i < j, dH(indi, indj ) <= 1 ∧ dH(ui,uj ) < t}
+ * Function for creating B set which is : B = {(i, j) | i < j, dH(indi, indj ) <= e ∧ dH(ui,uj ) < t}
  * @param strands - the strands in the system
  * @param t
  * @param distanceMetric - the distance metric we're checking (hamming or edit)
  * @param B - the output set.
  */
 void createBset(unordered_map<int, vector<int>>& strands, int t, int e, int (*distanceMetric)(vector<int>, vector<int>), vector<tuple<int, int>>& B,
-                vector<encoded_strand>& encoded_strands) {
+                unordered_map<int, encoded_strand>& encoded_strands) {
     /// this is a flag helping us to determine if the curretn strand need to be encoded or not,
     /// if he holds the constraint for all the other strands in the system it dosent need to be encoded
     /// and then we should add it to the encoded_strand vector with a pointer to himself and not encoded version.
@@ -387,8 +389,9 @@ void createBset(unordered_map<int, vector<int>>& strands, int t, int e, int (*di
         /// in case the strand dosent need to be encoded, we add encoded strand with the index of the strand
         /// in the strand data structure, so we could find it later in the decode part.
         if(needed_to_be_encoded == false){
-            encoded_strand current(iterator->first);
-            encoded_strands.insert(encoded_strands.begin(), current);
+            encoded_strand current(true, iterator->first, iterator->second);
+            pair<int, encoded_strand> new_strand(iterator->first, current);
+            encoded_strands.insert(new_strand);
 
         }
     }
@@ -397,15 +400,16 @@ void createBset(unordered_map<int, vector<int>>& strands, int t, int e, int (*di
 
 /*!
  * function for creating new encoded strand and pushing it into the encoded strand vector
- * @param index_of_encoded_by - the index of the strand that we're encoding the current strand by.
+ * @param index - the index of the strand we are encoding
  * @param w_l - w_l vector
  * @param delta_1 - delta1 vector
  * @param delta_2 - delta2 vector
+ * @param encoded_strands - all the encoded strands in the system
  */
-void createReplVector(vector<int>& w_l, vector<int>& delta_1, vector<int>& delta_2, vector<encoded_strand>& encoded_strands){
-    encoded_strand new_encoded_strand( delta_1, delta_2, w_l);
-    encoded_strands.push_back(new_encoded_strand);
-
+void createReplVector(vector<int>& w_l, vector<int>& delta_1, vector<int>& delta_2, unordered_map<int, encoded_strand>& encoded_strands, int index){
+    encoded_strand new_encoded_strand( delta_1, delta_2, w_l, index);
+    pair<int, encoded_strand> new_strand(index, new_encoded_strand);
+    encoded_strands.insert(new_strand);
 }
 
 /*!
@@ -436,10 +440,12 @@ void updateBSet(unordered_map<int, vector<int>>& strands, vector<tuple<int,int>>
         int t){
     vector<int> i_encoded_data;
     CreateOneVectorFromEncodedStrand(i_encoded_data, strand);
-    for(auto j = 0; j < B.size(); j++){
-       if(get<0>(B[j]) == i){
-           if(distanceMetric(strands.find(get<1>(B[j]))->second, i_encoded_data) >= t){
-               B.erase(B.begin() + j);
+    int j = 0;
+    for(auto it = B.begin(); it != B.end(); it++, j++){
+       if(get<0>(*it) == i){
+           if(distanceMetric(strands.find(get<1>(*it))->second, i_encoded_data) >= t){
+               B.erase(it);
+               it--;
            }
        }
     }
@@ -455,10 +461,10 @@ void updateBSet(unordered_map<int, vector<int>>& strands, vector<tuple<int,int>>
  * @param BruteForceOrNot - a flag that tells us if we should find w_l in brute force manner or not
  * @param index_of_last_strand - the index of the last strand in the system
  */
-void encoding_algorithm(unordered_map<int, vector<int>>& strands, int e,  int t, int (*distanceMetric)(vector<int>, vector<int>), vector<encoded_strand >& encoded_strands,
-                        bool BruteForceOrNot, int index_of_last_strand) {
+void encoding_algorithm(unordered_map<int, vector<int>>& strands, int e,  int t, int (*distanceMetric)(vector<int>, vector<int>), unordered_map<int, encoded_strand>& encoded_strands,
+                        bool BruteForceOrNot) {
     /// initilize p
-    int p = strands.size() - 1;
+    int p = strands.size();
     vector<tuple<int, int>> B;
     int index_length = log2(strands.size()) + 1;
     /// creating the B set
@@ -487,17 +493,18 @@ void encoding_algorithm(unordered_map<int, vector<int>>& strands, int e,  int t,
         /// creating delta2
         delta_2(strands.find(i)->second, strands.find(j)->second, delta_2_positions);
         /// creating the encoded strand a.k.a repl vector and adding it to the vector of encoded strands.
-        createReplVector(w_l, delta_1_positions, delta_2_positions, encoded_strands);
+        createReplVector(w_l, delta_1_positions, delta_2_positions, encoded_strands, i);
         /// (up)LM−1 = 1
-        encoded_strands.back().setLastBit(1);
+        encoded_strands.find(p)->second.setLastBit(1);
         /// this is for  (up)[0,log(M)] = ind_i
-        encoded_strands.back().setEncodedRelatedToIndex(index_i_in_binary);
-        updateBSet(strands, B, i, encoded_strands.back(), distanceMetric, t);
+        encoded_strands.find(p)->second.setEncodedRelatedToIndex(index_i_in_binary);
+        p = i;
+        updateBSet(strands, B, i,  encoded_strands.find(i)->second, distanceMetric, t);
     }
-    encoded_strands.back().setLastBit(0);
     vector<int> index_of_last_strand_binary;
-    decToBinary(index_of_last_strand, index_of_last_strand_binary);
-    encoded_strands.back().setEncodedRelatedToIndex(index_of_last_strand_binary);
+    encoded_strands.find(p)->second.setLastBit(0);
+    decToBinary(strands.size(), index_of_last_strand_binary);
+    encoded_strands.find(p)->second.setEncodedRelatedToIndex(index_of_last_strand_binary);
 }
 
 

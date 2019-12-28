@@ -24,16 +24,25 @@ class encoded_strand{
     vector<int> w_l;
     int last_bit;
     int if_not_encoded;
+    int my_index;
+    vector<int> data_if_not_encoded;
 
 public:
-    encoded_strand(int not_encoded_version_index){
-        if_not_encoded = not_encoded_version_index;
+    encoded_strand(bool not_encoded, int index, vector<int> data){
+        if_not_encoded = not_encoded;
+        my_index = index;
+        data_if_not_encoded = data;
     }
-    encoded_strand(vector<int>& delta_one, vector<int>& delta_two, vector<int>& w_L):
+    encoded_strand(vector<int>& delta_one, vector<int>& delta_two, vector<int>& w_L, int index):
     delta_1(delta_one), delta_2(delta_two), w_l(w_L){
         last_bit =1;
         if_not_encoded = -1;
+        my_index = index;
 
+    }
+    encoded_strand(int last_bit,  vector<int> encoded_in_relation_to){
+        last_bit = last_bit;
+        encoded_related_to_index = encoded_in_relation_to;
     }
     const vector<int> &getEncodedRelatedToIndex() const {
         return encoded_related_to_index;
