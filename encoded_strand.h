@@ -17,15 +17,24 @@ using namespace std;
  * last_bit - the last bit of the strand.
  * if_not_encoded - in case the strand is not suppose to be encoded, this field will contain the uncoded strand.
  */
-class encoded_data{
+class encoded_strand{
     vector<int> encoded_related_to_index;
     vector<int> delta_1;
     vector<int> delta_2;
     vector<int> w_l;
     int last_bit;
-    strand if_not_encoded;
+    int if_not_encoded;
 
 public:
+    encoded_strand(int not_encoded_version_index){
+        if_not_encoded = not_encoded_version_index;
+    }
+    encoded_strand(vector<int>& delta_one, vector<int>& delta_two, vector<int>& w_L):
+    delta_1(delta_one), delta_2(delta_two), w_l(w_L){
+        last_bit =1;
+        if_not_encoded = -1;
+
+    }
     const vector<int> &getEncodedRelatedToIndex() const {
         return encoded_related_to_index;
     }
@@ -66,24 +75,14 @@ public:
         last_bit = lastBit;
     }
 
-    const strand &getIfNotEncoded() const {
+    int getIfNotEncoded()  {
         return if_not_encoded;
     }
 
-    void setIfNotEncoded(const strand &ifNotEncoded) {
-        if_not_encoded = ifNotEncoded;
+    void setIfNotEncoded(int ifNotEncoded_index) {
+        if_not_encoded = ifNotEncoded_index;
     }
 
-
-};
-/*!
- * a class representing an encoded strand
- * index - the encoded index of the strand.
- * data - the encoded data of the strand (above there is an explanation regarding it).
- */
-class encoded_strand{
-    vector<int> index;
-    encoded_data data;
 
 };
 

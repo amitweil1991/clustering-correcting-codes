@@ -15,12 +15,12 @@ using namespace std;
  * index - representing the index part of the strand.
  */
 class strand {
-    vector<int> index;
+    int index;
     vector<int> data;
 public:
-    strand(const vector<int> &initial_index, const vector<int> &initial_data): index(initial_index), data(initial_data){};
+    strand(int initial_index, const vector<int> &initial_data): index(initial_index), data(initial_data){};
 
-     vector<int>& getIndex()  {
+     int getIndex()  {
         return index;
     }
 
@@ -28,7 +28,7 @@ public:
          return data;
     }
 
-    void setIndex(const vector<int> &index) {
+    void setIndex(int &index) {
         strand::index = index;
     }
 

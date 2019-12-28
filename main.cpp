@@ -76,9 +76,9 @@ void testingDeltaOne() {
     vector<int> positions_one;
     vector<int> positions_two;
     vector<int> positions_three;
-    delta_1_hamming(output_four, output_five, positions_one);
-    delta_1_hamming(output_eight, output_ten, positions_two);
-    delta_1_hamming(output_fiftheen, output_eight, positions_three);
+    delta_1(output_four, output_five, positions_one);
+    delta_1(output_eight, output_ten, positions_two);
+    delta_1(output_fiftheen, output_eight, positions_three);
     for (auto it = positions_one.begin(); it != positions_one.end(); it++) {
         cout << *it;
     }
@@ -94,21 +94,22 @@ void testingDeltaOne() {
 
 
 void creatingStrands(unordered_map<int, vector<int>>& strands){
-
-
-
-
-
-
-    /// indexes
     int eight = 8;
-    int nine = 9;
-    int ten = 10;
-    int eleven = 11;
-    int twelve = 12;
-    int thirteen = 13;
-    int fourtheen = 14;
-    int fiftheen = 15;
+   int nine = 9;
+   int ten = 10;
+   int eleven = 11;
+   int twelve = 12;
+   int thirteen = 13;
+   int fourtheen = 14;
+   int fiftheen = 15;
+//    decToBinary(8, eight);
+//    decToBinary(9 , nine);
+//    decToBinary(10, ten);
+//    decToBinary(11, eleven);
+//    decToBinary(12, twelve);
+//    decToBinary(13, thirteen);
+//    decToBinary(14, fourtheen);
+//    decToBinary(15, fiftheen);
 
     /// data
 
@@ -139,7 +140,6 @@ void creatingStrands(unordered_map<int, vector<int>>& strands){
     decToBinary(forthy_five, output_fourthy_five);
 
     /// inserting strands;
-
     strands[eight] = output_thirty_two;
     strands[nine] = output_thirty_three;
     strands[ten] = output_fourthy;
@@ -148,6 +148,14 @@ void creatingStrands(unordered_map<int, vector<int>>& strands){
     strands[thirteen] = output_fourthy_three;
     strands[fourtheen] = output_fourthy_four;
     strands[fiftheen] = output_fourthy_five;
+//    strands.insert(eight, output_thirty_two);
+//    strands.insert(nine , output_thirty_three);
+//    strands.insert(ten, output_fourthy);
+//    strands.insert(eleven,output_fourthy_one);
+//    strands.insert(twelve , output_fourthy_two);
+//    strands.insert(thirteen , output_fourthy_three);
+//    strands.insert(fourtheen , output_fourthy_four);
+//    strands.insert(fiftheen , output_fourthy_five);
 
 
 
@@ -156,7 +164,7 @@ void creatingStrands(unordered_map<int, vector<int>>& strands){
 
 
 void testS_e_i() {
-    unordered_map<vector<int>,vector<int>> strands;
+    unordered_map<int, vector<int>> strands;
     vector<vector<int>> output;
     vector<int> output2;
     creatingStrands(strands);
@@ -165,43 +173,44 @@ void testS_e_i() {
         cout << *it << endl;
 
     }
+
 }
 
 
-
-void testW_l_S_t(){
+void testW_l_S_t_BruteForce(){
     unordered_map<int, vector<int>> strands;
-    vector<vector<int>> output;
     creatingStrands(strands);
-    for(int i = 0; i < strands.size(); i++){
-        output.push_back(strands[i].getData());
+    vector<vector<int>> strands_data;
+    vector<int> output;
+    for(auto it = strands.begin(); it != strands.end(); it++){
+        strands_data.push_back(it->second);
     }
-    vector<int> w_output;
-    W_l_S_t_hamming(output, 2,w_output);
-    for(int i = 0; i < w_output.size(); i++){
-        cout << w_output[i];
+    W_l_S_t_BruteForce(strands_data, 4, output, HammingDistance);
+    cout << "the output of W_l_S_t is " << endl;
+    for(auto i: output){
+        cout << i;
+
     }
+    cout << endl;
 
 }
 
-void testCreateBSet(){
-    vector<strand> strands;
-    vector<tuple<int, int>> output;
-    creatingStrands(strands);
-    createBset(strands, 2, HammingDistance, output);
-    for(int i = 0; i < output.size(); i++){
-        cout << "(" << get<0>(output[i]) << ", " << get<1>(output[i]) << ")" << endl;
-    }
-}
 
-void testCreateReplVector(){
-    vector<strand> strands;
+void testW_l_S_t_NoBruteForce(){
+    unordered_map<int, vector<int>> strands;
     creatingStrands(strands);
-    vector<int> repl;
-    createReplVector(repl, strands[0].getIndex(), strands[0].getData(), strands[1].getIndex());
-    for(int i = 0; i < repl.size(); i ++){
-        cout << repl[i];
+    vector<vector<int>> strands_data;
+    vector<int> output;
+    for(auto it = strands.begin(); it != strands.end(); it++){
+        strands_data.push_back(it->second);
     }
+    W_l_S_t_NoBruteForce(strands_data, 2, output, HammingDistance);
+    cout << "the output of W_l_S_t is " << endl;
+    for(auto i: output){
+        cout << i;
+
+    }
+    cout << endl;
 
 }
 
@@ -219,6 +228,81 @@ void testDistanceByOne(){
 }
 
 
+void printStrandsIndexAndData(unordered_map<int, vector<int>> & strands){
+    for(auto it = strands.begin(); it != strands.end(); it++){
+        vector<int> index;
+        decToBinary(it->first, index);
+        for(int i = 0; i < index.size(); i++){
+            cout << index[i];
+        }
+        cout << " , ";
+        for(int i = 0; i < it->second.size(); i++){
+            cout << it->second[i];
+        }
+        cout << endl;
+    }
+}
+
+
+void testCreateBSet(){
+    unordered_map<int, vector<int>> strands;
+    creatingStrands(strands);
+    vector<tuple<int,int>> B_set;
+    vector<encoded_strand> encoded_strands;
+    printStrandsIndexAndData(strands);
+    createBset(strands, 3, 2, HammingDistance, B_set, encoded_strands);
+    for(int i = 0; i < B_set.size(); i++){
+        cout << "(" << get<0>(B_set[i]) << " , " << get<1>(B_set[i]) << ")" << endl;
+    }
+    cout << "encoded_strands:" << endl;
+    for(int i = 0; i < encoded_strands.size(); i++){
+        cout << encoded_strands[i].getIfNotEncoded() << endl;
+    }
+
+}
+
+void printBset(vector<tuple<int,int>>& B_set){
+    for(int i = 0; i < B_set.size(); i++){
+        cout << "(" << get<0>(B_set[i]) << " , " << get<1>(B_set[i]) << ")" << endl;
+    }
+}
+
+void testUpdateBSet(){
+    unordered_map<int, vector<int>> strands;
+    creatingStrands(strands);
+    vector<tuple<int,int>> B_set;
+    vector<encoded_strand> encoded_strands;
+    printStrandsIndexAndData(strands);
+    createBset(strands, 3, 2, HammingDistance, B_set, encoded_strands);
+    printBset(B_set);
+    cout << "encoded_strands:" << endl;
+    for(int i = 0; i < encoded_strands.size(); i++){
+        cout << encoded_strands[i].getIfNotEncoded() << endl;
+    }
+    vector<int>w_l(2);
+    w_l[0] = 1;
+    w_l[1] = 1;
+    vector<int> delta_one(2);
+    delta_one[0] = 0;
+    delta_one[1] = 0;
+    vector<int> delta_two(2);
+    delta_two[0] = 0;
+    delta_two[1] = 0;
+    encoded_strand new_strand(delta_one, delta_two, w_l);
+    updateBSet(strands, B_set, 9, new_strand, HammingDistance, 2);
+    printBset(B_set);
+
+
+}
+
+void testEncodingAlgorithim(){
+    unordered_map<int, vector<int>> strands;
+    creatingStrands(strands);
+    vector<encoded_strand> encoded_strands;
+    encoding_algorithm(strands, 2, 2, HammingDistance, encoded_strands, true, 8);
+    return;
+}
+
 
 
 int main(){
@@ -232,7 +316,11 @@ int main(){
 //    vector<string> DP[K][K];
 //    findBitCombinations(4,DP,2);
    // testDistanceByOne();
-    testS_e_i();
+  //  testS_e_i();
+ // testW_l_S_t_BruteForce();
+// testW_l_S_t_NoBruteForce();
+testEncodingAlgorithim();
+
 
 }
 
