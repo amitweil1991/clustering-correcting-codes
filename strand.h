@@ -4,8 +4,8 @@
 
 #ifndef CLUSTERING_CORRECTING_CODES_PROJECT_STRAND_H
 #define CLUSTERING_CORRECTING_CODES_PROJECT_STRAND_H
-#include <iostream>
-#include <vector>
+
+#include "includes.h"
 
 using namespace std;
 
