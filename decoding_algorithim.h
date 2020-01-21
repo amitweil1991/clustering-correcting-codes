@@ -52,12 +52,18 @@ void createDecodingOrderList(
  * @param - encoded_strand - the strand we decode.
  * @param encoded_strand_index - the index of the strand we decode.
  * @param strand_num_in_system - the number of strands in the system.
+ * @param e - index distance constraint
+ * @param t - data distance constraint
+ * @param distanceMetric - the distance metric we're using
  * @return - the decoded index as an int.
  */
 int DecodeIndex(
         encoded_strand_binary& encoded_strand,
         int encoded_strand_index,
-        int strand_num_in_system){
+        int strand_num_in_system,
+        int e,
+        int t,
+        int (*distanceMetric)(vector<int>, vector<int>)){
 
 
     int index_length = ceil(log2(strand_num_in_system));
@@ -65,7 +71,7 @@ int DecodeIndex(
     vector<int> delta_1_binary;
     set<int> positions_as_ints;
     vector<int> encoded_strand_index_binary;
-    encoded_strand.getDelta1FromEncodedData(delta_1_binary);
+    encoded_strand.getDelta1FromEncodedData(delta_1_binary, strand_num_in_system, e, t, encoded_strand_index, HammingDistance);
     encoded_strand.convertDelta1ToInt(positions_as_ints, delta_1_binary, position_length);
     decToBinaryWithSize(encoded_strand_index, encoded_strand_index_binary, index_length);
 
@@ -81,25 +87,34 @@ int DecodeIndex(
  * in the positions encoded in delta2 part of the encoded data.
  * @param decode - the strand we decode its data
  * @param encoded_by_data - the data of the strand the given strand was encoded by
+ * @param encoded_strand_index - the index of the strand we decode.
  * @param strand_num_in_system - the number of strands in the system.
  * @param strand_data_length - the length of strand's data (L)
+ * @param e - index distance constraint
+ * @param t - data distance constraint
+ * @param distanceMetric - the distance metric we're using
  */
 void DecodeData(
         encoded_strand_binary& decode,
         vector<int> encoded_by_data,
+        int encoded_strand_index,
         int strand_num_in_system,
-        int strand_data_length){
+        int strand_data_length,
+        int e,
+        int t,
+        int (*distanceMetric)(vector<int>, vector<int>)){
 
     int position_length = ceil(log2(strand_data_length));
     vector<int> delta_2_binary;
     set<int> positions_as_ints;
 
-    decode.getDelta2FromEncodedData(delta_2_binary);
+    decode.getDelta2FromEncodedData(delta_2_binary, strand_num_in_system, e, t, encoded_strand_index, HammingDistance);
     decode.convertDelta2ToInt(positions_as_ints, delta_2_binary, position_length);
     if(positions_as_ints.empty()) {
         /// denoting that decode's data and encoded by data are identical
         return;
     }
+    decode.setEncodedData(encoded_by_data);
     /// switch bits in the positions encoded in delta2.
     for(auto it = positions_as_ints.begin(); it != positions_as_ints.end(); it++){
         decode.get_encoded_data()[*it] = (encoded_by_data[*it] + 1) % 2;
@@ -108,19 +123,35 @@ void DecodeData(
 }
 
 
+
+
+
+
 /*!
  * the decoding algorithim, we go through the decoding order list and decode each strand by its delta1 and delta2.
  * @param encoded_strands - the encoded strands, in the end of the algorithim this data structure will hold all the
  * decoded strands
  * @param strand_data_length - length of strand's data (L).
+ * @param e - index distance constraint
+ * @param t - data distance constraint
+ * @param distanceMetric - the distance metric we're using
  */
 
 void DecodingAlgorithim(
         unordered_map<int, encoded_strand_binary>& encoded_strands,
-        int strand_data_length){
+        int strand_data_length,
+        int e,
+        int t,
+        int (*distanceMetric)(vector<int>, vector<int>)){
 
     int index_legnth = ceil(encoded_strands.size());
     int strand_num_in_system = encoded_strands.size();
+    /**in case no strand has been encoded no decoding need to be done, and the last bit of the last strand
+     * denotes that, just return
+    **/
+    if(encoded_strands.find(strand_num_in_system - 1)->second.getLastBit() == 0){
+        return;
+    }
     vector<int> decoding_order_list;
     createDecodingOrderList(encoded_strands, decoding_order_list);
     for(int i = 0; i < decoding_order_list.size(); i++){
@@ -136,14 +167,17 @@ void DecodingAlgorithim(
         else{
             auto current_encoded_strand = encoded_strands.find(decoding_order_list[i]);
             // 1. we find out by which strand the current encoded strand was encoded by, by inversing its index in the delta1 positions
-            int encoded_by_index = DecodeIndex(current_encoded_strand->second, current_encoded_strand->first, strand_num_in_system);
+            int encoded_by_index = DecodeIndex(current_encoded_strand->second,
+                    current_encoded_strand->first, strand_num_in_system, e, t, HammingDistance);
             // 2. we decode the current strand data by the data of the strand we just found its index.
             auto encoded_by_strand = encoded_strands.find(encoded_by_index);
             DecodeData(current_encoded_strand->second, encoded_by_strand->second.get_encoded_data(),
-                    strand_num_in_system, strand_data_length);
+                    current_encoded_strand->first, strand_num_in_system, strand_data_length, e, t, HammingDistance);
             vector<int> decoded_data;
         }
     }
+    /// pop the last bit of the last strand (redundancy bit)
+    encoded_strands.find(encoded_strands.size() - 1)->second.get_encoded_data().pop_back();
 }
 
 

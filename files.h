@@ -21,18 +21,19 @@ bool isBinaryNum(char element){
  * this function is responsible for parsing a binary file and create vector of vectors where every
  * vector is a strand, as well we calculate number of strands, the index and the data length and finally
  * add zero padding to the last vector if needed
- * @param L
- * @param path_to_file
- * @param strands
- * @param M
- * @param index_length
- * @param data_length
- */
+ * @param L - length of a strand
+ * @param path_to_file - path to the binary file
+ * @param strands - the strands that have been parsed
+ * @param M - number of strands created
+ * @param padding_done - the amount of padding that has been done to the last strand, so we could recounstruct the file
+ * we've parsed at the end of the run.
+ * */
 void readStrandsBinaryFie(
         int L,
         string path_to_file,
         vector<vector<char>>& strands,
-        int& M){
+        int& M,
+        int& padding_done){
 
         ifstream file(path_to_file, std::ios::binary );
         assert(file.is_open());
@@ -47,12 +48,11 @@ void readStrandsBinaryFie(
                 it++;
             }
         }
-        M = buffer.size() / L;
+        // calculating number of strands.
+        M = buffer.size() / L + 1;
         int remaining = buffer.size() % L;
-        if(remaining != 0){
-            M += 1;
-        }
-        int padding_num = L - remaining;
+        int padding_num = L - remaining - 1;
+        padding_done = padding_num;
         for(int i = 0; i < buffer.size(); i+=L) {
             int strand_size = L;
             if (i + strand_size > buffer.size()) {
@@ -65,9 +65,21 @@ void readStrandsBinaryFie(
             }
             strands.push_back(strand);
         }
-        /// add the padding to the last vector
-        while(padding_num--){
-            strands.back().push_back('0');
+        /// add the padding to the last vector, in case no padding is needed, we add another strand size of L - 1
+        /// denoted as the last strand in the system
+        if(padding_num == 0){
+            padding_num = L - 1;
+            padding_done = padding_num;
+            vector<char> last_strand;
+            while(padding_num--){
+                last_strand.push_back('0');
+            }
+            strands.push_back(last_strand);
+        }
+        else {
+            while (padding_num--) {
+                strands.back().push_back('0');
+            }
         }
         file.close();
 
@@ -95,15 +107,18 @@ void convertToMapOfStrands(
  * @param path_to_file - path to the data binary file
  * @param L - given strand's length.
  * @param strands - the output strands.
+ * @param padding - the amount of padding that has been done to the last strand, so we could recounstruct the file
+ * we've parsed at the end of the run.
  */
 void ParseDataToEncoding(
         string path_to_file,
         int L,
-        unordered_map<int, vector<int>>& strands){
+        unordered_map<int, vector<int>>& strands,
+        int& padding){
 
         int M = 0, index_length = 0, data_length = 0;
         vector<vector<char>> strands_vec;
-        readStrandsBinaryFie(L, path_to_file, strands_vec, M);
+        readStrandsBinaryFie(L, path_to_file, strands_vec, M, padding);
         convertToMapOfStrands(strands_vec, strands);
 
 }

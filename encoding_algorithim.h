@@ -145,89 +145,24 @@ void CreateAllBinaryStrings(
 /*!
  * this function is getting a 3*t + 2Log(N) size window from a given strand data starting from logM index.
  * @param strand_data - data of the strand
- * @param strand_num - number of strands we calculate distance from (to calculate LogN)
  * @param output - the window
  * @param t - the distance constraint
+ * @param N - the number of strands we're calculating w_l w.r.t them
+ * @param index_length - the length of an index of a strand (ceil(logM))
  */
 void GetBruteForceWindowFromStrandData(
         vector<int>& strand_data,
-        int strand_num,
         vector<int>& output,
         int t,
-        int strand_num_in_system){
+        int N,
+        int index_length){
 
-    int start_index = log2(strand_num_in_system);
-    int window_size = 3 * t + 2 * log2(strand_num);
-    for(int i = start_index; i < window_size + start_index; i++){
-        output.push_back(strand_data[i]);
-    }
-}
-/*!
- * this function is getting t * log(N) size window from a given strand data starting from logM index.
- * @param strand_data - data of the strand
- * @param strand_num - number of strands we calculate distance from (to calculate LogN)
- * @param output - the window
- * @param t - the distance constraint
- */
-void GetNotBruteForceWindowFromStrandData(
-        vector<int>& strand_data,
-        int strand_num,
-        int strand_num_in_system,
-        vector<int>& output,
-        int t){
-
-    int start_index = log2(strand_num_in_system);
-    int window_size =  t * log2(strand_num + 1);
-    for(int i = start_index; i < window_size + start_index; i++){
+    int window_size = 3 * t + 2 * ceil(log2(N));
+    for(int i = index_length; i < window_size + index_length; i++){
         output.push_back(strand_data[i]);
     }
 }
 
-/*!
- * this function is calculating all the binary numbers that are far from a given number by one in a given distance
- * metric (hamming or edit)
- * @param num - the given number
- * @param numbers - the output set of all the numbers that are far in one bit.
- * @param distanceMetric - pointer to the distance function
- */
-void distanceByOne(
-        vector<int> num,
-        set<vector<int>>& numbers,
-        int (*distanceMetric)(vector<int>, vector<int>)){
-
-    for(int i = 0; i < num.size(); i++){
-        vector<int> index_j;
-        index_j = num;
-        if(num[i] == 0){
-            index_j[i] = 1;
-        }
-        else{
-            index_j[i] = 0;
-        }
-        numbers.insert(index_j);
-    }
-    num.insert(num.begin(), 1);
-    numbers.insert(num);
-}
-/*!
- * this function will helps us calculating S(e,i),  for each number in the given input_number set
- * we're calculating all the binary numbers that are far from him in one bit (hamming distance) and
- * inserting it into the output_numbers set (which eventually will contain all the numbers).
- * @param numbers - the set of the input binary numbers
- * @param output_numbers - the output set containing all the numbers that are far in one bit from a number
- * in the input set.
- * @param distanceMetric - pointer to the distance function
-
- */
-void distanceByOneFromSet(
-        set<vector<int>>& input_numbers,
-        set<vector<int>>& output_numbers,
-        int (*distanceMetric)(vector<int>, vector<int>)){
-
-    for(auto it = input_numbers.begin(); it != input_numbers.end(); it++){
-        distanceByOne(*it, output_numbers, distanceMetric);
-    }
-}
 
 
 /*!
@@ -240,6 +175,7 @@ void distanceByOneFromSet(
  * @param distanceMetric- a pointer to a function of distance metric (hamming or edit)
  * @param output_data - the output strands data
  * @param encoded_strands - the encoded strands data structure.
+ * @param index_length - length of the binary representation of an index.
  */
 
 void S_e_i(
@@ -248,10 +184,11 @@ void S_e_i(
         const int i,
         int (*distanceMetric)(vector<int>, vector<int>),
         vector<vector<int>>& output_data,
-        unordered_map<int,encoded_strand_binary>& encoded_strands) {
+        unordered_map<int,encoded_strand_binary>& encoded_strands,
+        int index_length) {
 
     vector<int> binary_representation;
-    decToBinary(i, binary_representation);
+    decToBinaryWithSize(i, binary_representation, index_length);
     /// we're going to create a set of all the indexes such that each one of them is diffrent from i in at most e bits,
     /// and its not i.
     int count_till_e = 1;
@@ -269,16 +206,16 @@ void S_e_i(
     }
     vector<int> dec_indexes;
     /// getting the number of elements we need their window size data
-    int elements_num = 0;
-    for(auto it = union_of_all.begin(); it != union_of_all.end(); it++){
-        int check = binaryToDec(*it);
-        if(check == i) {
-            continue;
-        }
-        if(strands.find(check) != strands.end()){
-            elements_num++;
-        }
-    }
+//    int elements_num = 0;
+//    for(auto it = union_of_all.begin(); it != union_of_all.end(); it++){
+//        int check = binaryToDec(*it);
+//        if(check == i) {
+//            continue;
+//        }
+//        if(strands.find(check) != strands.end()){
+//            elements_num++;
+//        }
+//    }
     /// inserting the data of the relevant indexes.
     for(auto it = union_of_all.begin(); it != union_of_all.end(); it++){
         int check = binaryToDec(*it);
@@ -332,21 +269,26 @@ bool checkConstraint(
  * @param w_output - the output vector that satisfies the condition
  * @param strands_num - the number of the strands in the system.
  * @param N - number of strands that our window need to be diffrent from their data in at least t bits
+ * @param index_legnth - the length of an index of a strand (which is logM).
  */
 void W_l_S_t_BruteForce(
         vector<vector<int>>& strands_data,
         int t,
         vector<int>& w_output,
         int (*distanceMetric)(vector<int>, vector<int>),
-        int N){
+        int N,
+        int index_legnth){
 
     /// first we create all the binary strings from length t.
     vector<vector<int>> binary_strings;
     CreateAllBinaryStrings(binary_strings, 3 * t +  2 * ceil(log2(N)));
+    /// flag denoting if a binary string holds the constraint w.r.t all the strands we're checking (N).
     int constraint_approved_fo_all = 1;
     for(int i = 0; i < binary_strings.size(); i++){
         for(int j = 0; j < strands_data.size(); j++){
-            if(!checkConstraint(binary_strings[i], strands_data[j], t,  distanceMetric)){
+            vector<int> relevant_part_of_data;
+            GetBruteForceWindowFromStrandData(strands_data[j], relevant_part_of_data, t, N, index_legnth);
+            if(!checkConstraint(binary_strings[i], relevant_part_of_data, t,  distanceMetric)){
                 constraint_approved_fo_all = 0;
             }
         }
@@ -372,12 +314,13 @@ void W_l_S_t_BruteForce(
  * @return - true - the constraint applies, otherwise false.
  */
 bool checkConstraintFromStrtTillLogN(
-        vector<int>& binary_string, vector<int>& strand_data,
+        vector<int>& binary_string,
+        vector<int>& strand_data,
         int start_index,
         int N,
         int (*distanceMetric)(vector<int>, vector<int>)){
 
-        vector<int> relevant_part_of_data(strand_data.begin() + start_index, strand_data.begin() + start_index + log2(N + 1) - 1);
+        vector<int> relevant_part_of_data(strand_data.begin() + start_index, strand_data.begin() + start_index + ceil(log2(N + 1)));
         return checkConstraint(binary_string, relevant_part_of_data, 1, distanceMetric);
 }
 
@@ -393,35 +336,46 @@ bool checkConstraintFromStrtTillLogN(
  * @param distanceMetric - the distance metric we're checking with.
  * @param strands_num - number of strands in the system
  * @param N - number of strands that our window need to be diffrent from their data in at least t bits
+ * @param index_legnth - the length of an index of a strand (which is logM).
+
  */
 void W_l_S_t_NoBruteForce(
-        vector<vector<int>>& strands_data,
+        vector<vector<int>>& strands,
         int t,
         vector<int>& w_output,
         int (*distanceMetric)(vector<int>, vector<int>),
-        int N) {
+        int N,
+        int index_length) {
 
+        // create potential logN+1 size windows
         vector<vector<int>> binary_strings;
-        CreateAllBinaryStrings(binary_strings, log2(N + 1));
-        int constraint_approved_fo_all = 1;
-        for (int i = 0, j = 0; i < t && j < strands_data[0].size(); i++, j += ceil(log2(strands_data.size() + 1))) {
-            for (int index = 0; index < binary_strings.size(); index++) {
-                for (int data_index = 0; data_index < strands_data.size(); data_index++) {
-                if (!checkConstraintFromStrtTillLogN(binary_strings[i], strands_data[data_index], j, strands_data.size(), distanceMetric)) {
-                    constraint_approved_fo_all = 0;
-                    break;
-                }
+        CreateAllBinaryStrings(binary_strings, ceil(log2(N + 1)));
 
-            }
-            /// if the constraint is approved we concatenate the vectors.
+        // flag to check wether a window is valid (holds constraint for all N strands)
+        int constraint_approved_fo_all = 1;
+
+        // moving window loop
+        for (int i = 0, j = index_length; i < t && j < t * log2(N + 1) + index_length; i++, j += ceil(log2(N + 1))) {
+
+            for (int index = 0; index < binary_strings.size(); index++) {
+                // check the binary string holds the constraint with all of the strands
+                for (int data_index = 0; data_index < strands.size(); data_index++) {
+                    if (!checkConstraintFromStrtTillLogN(binary_strings[index], strands[data_index], j, strands.size(),
+                                                         distanceMetric)) {
+                        constraint_approved_fo_all = 0;
+                        break;
+                    }
+                }
+                /// if the constraint is approved we concatenate the vectors.
                 if (constraint_approved_fo_all == 1) {
-                    w_output.insert(w_output.end(), binary_strings[i].begin(), binary_strings[i].end());
+                    w_output.insert(w_output.end(), binary_strings[index].begin(), binary_strings[index].end());
                     break;
                 }
                 constraint_approved_fo_all = 1;
+            }
         }
     }
-}
+
 
 
 
@@ -462,7 +416,7 @@ void find_pair_to_be_fixed(
         if (distanceMetric(index_i, index_j_binary) <= e ){
             auto encoded_version = encoded_strands.find(j);
             if(encoded_version == encoded_strands.end()){
-                if(distanceMetric(i_data, strands.find(i)->second) < t){
+                if(distanceMetric(i_data, strands.find(j)->second) < t){
                     tuple<int, int> pair(i, j);
                     B.push_back(pair);
                     /// in case we found one j that dosent hold the constraint for a given i
@@ -574,19 +528,23 @@ void encoding_algorithm(
     int p = M - 1;
     vector<tuple<int, int>> B;
     int index_length = ceil(log2(M));
-    int delta_1_size = ceil(log2(ceil(log2(M)))) * e;
+    int delta_1_size = ceil(log2(index_length)) * e;
     int delta_2_size = ceil(log2(strands_data_length)) * (t - 1);
 
     /** check the constraint  data_length > LogM + 1 + e*LogLogM + (t-1)* log(L-LogM) + w
         where w is the number of bits needed for encoding w_l (which its length depends wether we find it
-        on brute force manner or not
+        on brute force manner or not  NEED TO BE FIXED.
      **/
+    int len = index_length + 1 + delta_1_size + delta_2_size + t * ceil(log2(M));
     if(BruteForceOrNot){
         if(strands_data_length < index_length + 1 + delta_1_size + delta_2_size + 3*t + 2 * delta_1_size){
+            cout << "strand length dosent hold the constraint" << endl;
             return;
         }
     }
-    else if(strands_data_length < index_length + 1 + delta_1_size + delta_2_size + (t-1) * delta_1_size){
+
+    else if(strands_data_length < index_length + 1 + delta_1_size + delta_2_size + t * ceil(log2(M))){
+        cout << "strand length dosent hold the constraint" << endl;
         return;
     }
 
@@ -594,6 +552,8 @@ void encoding_algorithm(
     encoded_strand_binary last_strand(strands.find(p)->second, BruteForceOrNot);
     pair<int, encoded_strand_binary> last_strand_pair(p, last_strand);
     encoded_strands.insert(last_strand_pair);
+    /// add last bit as 1 from the last strand
+    encoded_strands.find(p)->second.insertLastBit();
 
     ///  while we go through all the indexes
     for(int i = 0; i < strands.size(); i++){
@@ -626,13 +586,15 @@ void encoding_algorithm(
         vector<int> delta_1_binary;
         vector<int> delta_2_binary;
 
-        S_e_i(strands, e, current_i, distanceMetric, data_of_potential_strands, encoded_strands);
+        S_e_i(strands, e, current_i, distanceMetric, data_of_potential_strands, encoded_strands, index_length);
         if (BruteForceOrNot) {
 
-            W_l_S_t_BruteForce(data_of_potential_strands, t, w_l, distanceMetric, data_of_potential_strands.size());
+            W_l_S_t_BruteForce(data_of_potential_strands, t, w_l, distanceMetric,
+                    data_of_potential_strands.size(), index_length);
         }
         else {
-            W_l_S_t_NoBruteForce(data_of_potential_strands, t, w_l, distanceMetric, data_of_potential_strands.size());
+            W_l_S_t_NoBruteForce(data_of_potential_strands, t, w_l, distanceMetric,
+                    data_of_potential_strands.size(), index_length);
         }
 
         /// creating delta1

@@ -96,67 +96,7 @@ using namespace std;
 //}
 //
 //
-//void creatingStrands(unordered_map<int, vector<int>>& strands){
-//    int zero = 0;
-//    int one = 1;
-//    int two = 2;
-//    int three = 3;
-//    int four = 4;
-//    int five = 5;
-//    int six = 6;
-//    int seven = 7;
-////    decToBinary(8, eight);
-////    decToBinary(9 , nine);
-////    decToBinary(10, ten);
-////    decToBinary(11, eleven);
-////    decToBinary(12, twelve);
-////    decToBinary(13, thirteen);
-////    decToBinary(14, fourtheen);
-////    decToBinary(15, fiftheen);
-//
-//    /// data
-//
-//    int thirty_two = 32;
-//    int thirty_three = 33;
-//    int thirty_four = 34;
-//    int thirty_five = 35;
-//    int thirty_six = 36;
-//    int thirty_seven =  37;
-//    int forthy = 40;
-//    int forthy_one = 41;
-////    int forthy_two = 42;
-////    int forthy_three = 43;
-////    int forthy_four = 44;
-////    int forthy_five = 45;
-//
-//    vector<int> output_thirty_two;
-//    vector<int> output_thirty_three;
-//    vector<int> output_fourthy;
-//    vector<int> output_fourthy_one;
-//    vector<int> output_thirty_four;
-//    vector<int> output_thirty_five;
-//    vector<int> output_thirty_six;
-//    vector<int> output_thirty_seven;
-//    decToBinary(thirty_two, output_thirty_two);
-//    decToBinary(thirty_three, output_thirty_three);
-//    decToBinary(thirty_four, output_thirty_four);
-//    decToBinary(thirty_five, output_thirty_five);
-//    decToBinary(thirty_six, output_thirty_six);
-//    decToBinary(thirty_seven, output_thirty_seven);
-//    decToBinary(forthy, output_fourthy);
-//    decToBinary(forthy_one, output_fourthy_one);
-//
-//
-//    /// inserting strands;
-//    strands[zero] = output_thirty_two;
-//    strands[one] = output_thirty_three;
-//    strands[two] = output_thirty_four;
-//    strands[three] = output_thirty_five;
-//    strands[four] = output_thirty_six;
-//    strands[five] = output_thirty_seven;
-//    strands[six] = output_fourthy;
-//    strands[seven] = output_fourthy_one;
-//
+
 ////    strands.insert(eight, output_thirty_two);
 ////    strands.insert(nine , output_thirty_three);
 ////    strands.insert(ten, output_fourthy);
@@ -481,7 +421,15 @@ void testConvertIntVecToCharVec(){
 
     ///testCreateDelta1();
    /// testCreateDelta2();
-
+  /// testW_lBruteForce();
+  /// testW_lNoBruteForce();
+  /// testCreateReplVector();
+  ///testCreateS_e_i();
+  ///testAddEncodedVersion();
+/// testEncodingAlgorithim();
+///  testCreateDecodingOrderList();
+///testDecodeIndex();
+    testDecodeData();
 
 
 

@@ -131,3 +131,54 @@ void convertIntVecToCharVec(
         char_vec.push_back(int_vec[i] + '0');
     }
 }
+
+
+/*!
+ * this function is calculating all the binary numbers that are far from a given number by one in a given distance
+ * metric (hamming or edit)
+ * @param num - the given number
+ * @param numbers - the output set of all the numbers that are far in one bit.
+ * @param distanceMetric - pointer to the distance function
+ */
+void distanceByOne(
+        vector<int> num,
+        set<vector<int>>& numbers,
+        int (*distanceMetric)(vector<int>, vector<int>)){
+
+    for(int i = 0; i < num.size(); i++){
+        vector<int> index_j;
+        index_j = num;
+        if(num[i] == 0){
+            index_j[i] = 1;
+        }
+        else{
+            index_j[i] = 0;
+        }
+        numbers.insert(index_j);
+    }
+//    num.insert(num.begin(), 1);
+//    numbers.insert(num);
+}
+
+
+
+/*!
+ * this function will helps us calculating S(e,i),  for each number in the given input_number set
+ * we're calculating all the binary numbers that are far from him in one bit (hamming distance) and
+ * inserting it into the output_numbers set (which eventually will contain all the numbers).
+ * @param numbers - the set of the input binary numbers
+ * @param output_numbers - the output set containing all the numbers that are far in one bit from a number
+ * in the input set.
+ * @param distanceMetric - pointer to the distance function
+
+ */
+void distanceByOneFromSet(
+        set<vector<int>>& input_numbers,
+        set<vector<int>>& output_numbers,
+        int (*distanceMetric)(vector<int>, vector<int>)){
+
+    for(auto it = input_numbers.begin(); it != input_numbers.end(); it++){
+        distanceByOne(*it, output_numbers, distanceMetric);
+    }
+}
+
