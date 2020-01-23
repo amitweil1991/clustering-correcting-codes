@@ -1,5 +1,4 @@
 #include <iostream>
-#include "strand.h"
 #include "encoding_algorithim.h"
 #include "files.h"
 #include "decoding_algorithim_tests.h"
@@ -408,6 +407,13 @@ void TestsetNextNodeInList(vector<int> index_in_binary){
 
 }
 
+
+
+
+
+
+
+
 void testConvertIntVecToCharVec(){
     vector<char> f;
     vector<int> t{1, 0, 0, 1};
@@ -417,23 +423,57 @@ void testConvertIntVecToCharVec(){
     }
 }
 
-    int main(){
-
-    ///testCreateDelta1();
-   /// testCreateDelta2();
-  /// testW_lBruteForce();
-  /// testW_lNoBruteForce();
-  /// testCreateReplVector();
-  ///testCreateS_e_i();
-  ///testAddEncodedVersion();
-/// testEncodingAlgorithim();
-///  testCreateDecodingOrderList();
-///testDecodeIndex();
-    testDecodeData();
+int main(){
 
 
+    /******* encoding algorithim tests ********/
+
+    /**
+   testCreateDelta1();
+   testCreateDelta2();
+   testW_lBruteForce();
+   testW_lNoBruteForce();
+   testCreateReplVector();
+   testCreateS_e_i();
+   testAddEncodedVersion();
+   testEncodingAlgorithim();
+   **/
+
+   /******** deocding algorithim tests ********/
+
+   /**
+   testCreateDecodingOrderList();
+   testDecodeIndex();
+   testDecodeData();
+   testDecodingAlgorithim();
+   **/
+
+   /**** combined test ****/
+
+   unordered_map<int, vector<int>> strands;
+   map<int, vector<int>> strands_map;
+
+    int padding = 0;
+   int L = 18;
+   ParseDataToEncoding("test_file.txt", L, strands, padding);
+   int e = 1;
+   int t = 1;
+   unordered_map<int, encoded_strand_binary> encoded_strands;
+   map<int, encoded_strand_binary> encoded_strands_map;
 
 
+   convertUnorderedMapBeforeEncodingToMap(strands, strands_map);
+   exportStrandsBeforeEncodingToFile("results_before_encoding.txt", strands_map, padding);
+
+   encoding_algorithm(strands, e, t, L, HammingDistance, encoded_strands, false);
+   convertUnorderedMapToMap(encoded_strands, encoded_strands_map);
+
+   exportStrandsToFile("results_after_encoding.txt", encoded_strands_map, padding);
+   DecodingAlgorithim(encoded_strands, L, e, t, HammingDistance);
+
+   encoded_strands_map.clear();
+   convertUnorderedMapToMap(encoded_strands, encoded_strands_map);
+   exportStrandsToFile("results_after_decoding.txt", encoded_strands_map, padding);
 
 
 

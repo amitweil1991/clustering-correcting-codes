@@ -111,7 +111,8 @@ void DecodeData(
     decode.getDelta2FromEncodedData(delta_2_binary, strand_num_in_system, e, t, encoded_strand_index, HammingDistance);
     decode.convertDelta2ToInt(positions_as_ints, delta_2_binary, position_length);
     if(positions_as_ints.empty()) {
-        /// denoting that decode's data and encoded by data are identical
+        /// denoting that decode's data and encoded by data are identical, so we just assign the data
+        decode.setEncodedData(encoded_by_data);
         return;
     }
     decode.setEncodedData(encoded_by_data);
@@ -144,27 +145,35 @@ void DecodingAlgorithim(
         int t,
         int (*distanceMetric)(vector<int>, vector<int>)){
 
-    int index_legnth = ceil(encoded_strands.size());
+    /// for test manners:
+    if(encoded_strands.empty()){
+        return;
+    }
+    int index_legnth = ceil(log2(encoded_strands.size()));
     int strand_num_in_system = encoded_strands.size();
     /**in case no strand has been encoded no decoding need to be done, and the last bit of the last strand
      * denotes that, just return
     **/
     if(encoded_strands.find(strand_num_in_system - 1)->second.getLastBit() == 0){
+        /// pop the last bit of the last strand (redundancy bit)
+        encoded_strands.find(encoded_strands.size() - 1)->second.get_encoded_data().pop_back();
         return;
     }
+
+    /// create the decoding order list
     vector<int> decoding_order_list;
     createDecodingOrderList(encoded_strands, decoding_order_list);
-    for(int i = 0; i < decoding_order_list.size(); i++){
-        /// first we take the first LogM bits of the last strand in the list and put it as the first LogM bits of the last strand.
-        if(i == 0){
-            vector<int> last_strand_first_logM_bits;
-            auto current_encoded_strand = encoded_strands.find(decoding_order_list[i]);
-            current_encoded_strand->second.getFirstLogMBits(last_strand_first_logM_bits, index_legnth);
-            auto last_strand = encoded_strands.find(strand_num_in_system - 1);
-            last_strand->second.setfirstLogMBits(last_strand_first_logM_bits);
-        }
+
+    /// first we take the first LogM bits of the last strand in the list and put it as the first LogM bits of the last strand.
+    vector<int> last_strand_first_logM_bits;
+    auto current_encoded_strand = encoded_strands.find(decoding_order_list[0]);
+    current_encoded_strand->second.getFirstLogMBits(last_strand_first_logM_bits, index_legnth);
+    auto last_strand = encoded_strands.find(strand_num_in_system - 1);
+    last_strand->second.setfirstLogMBits(last_strand_first_logM_bits);
+
+    /// start encoding the strands in the order denoted in the decoding orderl ist.
+    for(int i = 0; i < decoding_order_list.size() - 1; i++){
         /// if we're not in the first  node in the decoding order list
-        else{
             auto current_encoded_strand = encoded_strands.find(decoding_order_list[i]);
             // 1. we find out by which strand the current encoded strand was encoded by, by inversing its index in the delta1 positions
             int encoded_by_index = DecodeIndex(current_encoded_strand->second,
@@ -174,7 +183,7 @@ void DecodingAlgorithim(
             DecodeData(current_encoded_strand->second, encoded_by_strand->second.get_encoded_data(),
                     current_encoded_strand->first, strand_num_in_system, strand_data_length, e, t, HammingDistance);
             vector<int> decoded_data;
-        }
+
     }
     /// pop the last bit of the last strand (redundancy bit)
     encoded_strands.find(encoded_strands.size() - 1)->second.get_encoded_data().pop_back();

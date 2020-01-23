@@ -121,10 +121,10 @@ public:
         int N = union_of_all.size();
         // brute force
         if(brute_force){
-            return 3 * t + 2 * ceil(log(N + 1));
+            return 3 * t +  2 * ceil(log2(N + 1));
         }
         // no brute force
-        else return t * ceil(log(N + 1));
+        else return t * ceil(log2(N + 1));
 
     }
 
@@ -144,11 +144,12 @@ public:
             int t,
             int index,
             int (*distanceMetric)(vector<int>, vector<int>)){
-        /// in case brute force == true, w_l = 3t + 2*logN
+        /// in case brute force == true, w_l = 3t + 2*log(N+1)
         int w_l_size = calculate_wl_size(M, e, t, index, distanceMetric);
         int index_length = ceil(log2(M));
         int delta_1_size = ceil(log2(index_length)) * e;
-        vector<int> output{encoded_data.begin() + w_l_size, encoded_data.begin() + w_l_size + delta_1_size};
+        vector<int> output{encoded_data.begin() + w_l_size + index_length,
+                           encoded_data.begin() + w_l_size + index_length + delta_1_size};
         delta_1_from_encoded_data = output;
     }
     /*!
@@ -191,8 +192,8 @@ public:
         int index_length = ceil(log2(M));
         int delta_1_size = ceil(log2(index_length)) * e;
         int delta_2_size = ceil(log2(encoded_data.size())) * (t - 1);
-        vector<int> output{encoded_data.begin() + w_l_size + delta_1_size
-                           , encoded_data.begin() + w_l_size + delta_1_size + delta_2_size};
+        vector<int> output{encoded_data.begin() + w_l_size + index_length + delta_1_size
+                           ,encoded_data.begin() + w_l_size + index_length + delta_1_size + delta_2_size};
         delta_2_from_encoded_data = output;
     }
 
@@ -214,7 +215,7 @@ public:
         for(int i = 0; i < delta2.size(); i += position_length){
             vector<int> curr_binary_position{delta2.begin() + i, delta2.begin() + i + position_length};
             int curr_position = binaryToDec(curr_binary_position);
-            /// unordered delta2 = padding
+            /// unordered delta2 = identical
             if(curr_position < last_position){
                 positions_as_ints.clear();
                 return;

@@ -67,8 +67,7 @@ void readStrandsBinaryFie(
         }
         /// add the padding to the last vector, in case no padding is needed, we add another strand size of L - 1
         /// denoted as the last strand in the system
-        if(padding_num == 0){
-            padding_num = L - 1;
+        if(padding_num == L - 1){
             padding_done = padding_num;
             vector<char> last_strand;
             while(padding_num--){
@@ -124,15 +123,53 @@ void ParseDataToEncoding(
 }
 
 /*!
+ * helper function for converting unordered map to ordered map
+ * @param encoded_strands - unordered map
+ * @param new_map - map
+ */
+void convertUnorderedMapToMap(
+        unordered_map<int, encoded_strand_binary>& encoded_strands,
+        map<int, encoded_strand_binary>& new_map
+){
+    /// insert to sorted map so we can print in the order of the strands's indexes.
+    for(auto it = encoded_strands.begin(); it != encoded_strands.end(); it++){
+        pair<int, encoded_strand_binary> p(it->first, it->second);
+        new_map.insert(p);
+    }
+}
+
+
+/*!
+ * helper function for converting unordered map to ordered map
+ * @param encoded_strands - unordered map
+ * @param new_map - map
+ */
+void convertUnorderedMapBeforeEncodingToMap(
+        unordered_map<int, vector<int>>& encoded_strands,
+        map<int, vector<int>>& new_map
+){
+    /// insert to sorted map so we can print in the order of the strands's indexes.
+    for(auto it = encoded_strands.begin(); it != encoded_strands.end(); it++){
+        pair<int, vector<int>> p(it->first, it->second);
+        new_map.insert(p);
+    }
+}
+
+
+/*!
  * function that take all the  strands, convert them to vector of chars and write them into a binary file.
- * @param path_to_file
- * @param encoded_strands
+ * @param path_to_file - path to file we're writing to
+ * @param encoded_strands - the encoded strands we will export
+ * @param padding - the amount of padding that has been done when reading the file for encoding
  */
 void exportStrandsToFile(
         string path_to_file,
-        unordered_map<int, encoded_strand_binary> encoded_strands)
+        map<int, encoded_strand_binary> encoded_strands,
+        int padding)
 {
         ofstream file(path_to_file, ios::binary);
+
+
         for(auto it = encoded_strands.begin(); it != encoded_strands.end(); it++){
             vector<char> strand_in_char;
             vector<int> strand_data = it->second.get_encoded_data();
@@ -142,11 +179,44 @@ void exportStrandsToFile(
             for(int i = 0; i < strand_in_char.size(); i++){
                 file << strand_in_char[i];
             }
+            file << '\n';
         }
+//        while(padding--){
+//           file << '0';
+//        }
         file.close();
 }
 
+/*!
+ * function that take all the  strands, convert them to vector of chars and write them into a binary file.
+ * @param path_to_file - path to file we're writing to
+ * @param encoded_strands - the encoded strands we will export
+ * @param padding - the amount of padding that has been done when reading the file for encoding
+ */
+void exportStrandsBeforeEncodingToFile(
+        string path_to_file,
+        map<int, vector<int>> strands,
+        int padding)
+{
+    ofstream file(path_to_file, ios::binary);
 
+
+    for(auto it = strands.begin(); it != strands.end(); it++){
+        vector<char> strand_in_char;
+        vector<int> strand_data = it->second;
+        // convert it to char
+        convertIntVecToCharVec(strand_in_char, strand_data);
+        // write it into a file
+        for(int i = 0; i < strand_in_char.size(); i++){
+            file << strand_in_char[i];
+        }
+        file << '\n';
+    }
+//        while(padding--){
+//           file << '0';
+//        }
+    file.close();
+}
 
 
 void readEncodedStrandsBinaryFie(
@@ -210,7 +280,9 @@ void ParseDataToDecoding(
     readEncodedStrandsBinaryFie(path_to_file, strands_vec, L);
     convertToMapOfEncodedStrands(strands_vec, encoeded_strands, bruteForce);
 
+
 }
+
 
 
 #endif //CLUSTERING_CORRECTING_CODES_PROJECT_FILES_H

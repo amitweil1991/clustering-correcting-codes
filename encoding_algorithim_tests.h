@@ -180,8 +180,9 @@ void testCreateS_e_i(){
     vector<vector<int>> output_data;
     unordered_map<int,encoded_strand_binary> encoded_strands;
     creatingStrands(strands, encoded_strands);
+    int N = 0;
     /// test1
-    S_e_i(strands, e, i, HammingDistance, output_data, encoded_strands, 3);
+    S_e_i(strands, e, i, HammingDistance, output_data, encoded_strands, 3, N);
     vector<int> output_in_ints;
     for(int i = 0; i < output_data.size(); i++){
         output_in_ints.push_back(binaryToDec(output_data[i]));
@@ -191,7 +192,7 @@ void testCreateS_e_i(){
     output_data.clear();
     /// test2
     e = 1;
-    S_e_i(strands, e, i, HammingDistance, output_data, encoded_strands, 3);
+    S_e_i(strands, e, i, HammingDistance, output_data, encoded_strands, 3, N);
     for(int i = 0; i < output_data.size(); i++){
         output_in_ints.push_back(binaryToDec(output_data[i]));
     }

@@ -157,7 +157,7 @@ void GetBruteForceWindowFromStrandData(
         int N,
         int index_length){
 
-    int window_size = 3 * t + 2 * ceil(log2(N));
+    int window_size = 3 * t + 2 * ceil(log2(N+1));
     for(int i = index_length; i < window_size + index_length; i++){
         output.push_back(strand_data[i]);
     }
@@ -176,6 +176,8 @@ void GetBruteForceWindowFromStrandData(
  * @param output_data - the output strands data
  * @param encoded_strands - the encoded strands data structure.
  * @param index_length - length of the binary representation of an index.
+ * @param N - number of binary strings that are from from the given index (i) by e indexes at most. (they dont have to be
+ * in the system, this parameter will be later used from calculating w_l
  */
 
 void S_e_i(
@@ -185,17 +187,18 @@ void S_e_i(
         int (*distanceMetric)(vector<int>, vector<int>),
         vector<vector<int>>& output_data,
         unordered_map<int,encoded_strand_binary>& encoded_strands,
-        int index_length) {
+        int index_length,
+        int& N) {
 
-    vector<int> binary_representation;
-    decToBinaryWithSize(i, binary_representation, index_length);
+    vector<int> index_binary_representation;
+    decToBinaryWithSize(i, index_binary_representation, index_length);
     /// we're going to create a set of all the indexes such that each one of them is diffrent from i in at most e bits,
     /// and its not i.
     int count_till_e = 1;
     set<vector<int>> relevant_indexes;
     set<vector<int>> output_indexes;
     set<vector<int>> union_of_all;
-    distanceByOne(binary_representation, relevant_indexes, distanceMetric);
+    distanceByOne(index_binary_representation, relevant_indexes, distanceMetric);
     union_of_all = relevant_indexes;
     count_till_e++;
     while(count_till_e <= e){
@@ -205,17 +208,13 @@ void S_e_i(
         count_till_e++;
     }
     vector<int> dec_indexes;
-    /// getting the number of elements we need their window size data
-//    int elements_num = 0;
-//    for(auto it = union_of_all.begin(); it != union_of_all.end(); it++){
-//        int check = binaryToDec(*it);
-//        if(check == i) {
-//            continue;
-//        }
-//        if(strands.find(check) != strands.end()){
-//            elements_num++;
-//        }
-//    }
+    /// deleting i from the set.
+    for(auto it = union_of_all.begin(); it != union_of_all.end(); it++){
+        if(*it == index_binary_representation){
+            union_of_all.erase(it);
+        }
+    }
+    N = union_of_all.size();
     /// inserting the data of the relevant indexes.
     for(auto it = union_of_all.begin(); it != union_of_all.end(); it++){
         int check = binaryToDec(*it);
@@ -281,7 +280,7 @@ void W_l_S_t_BruteForce(
 
     /// first we create all the binary strings from length t.
     vector<vector<int>> binary_strings;
-    CreateAllBinaryStrings(binary_strings, 3 * t +  2 * ceil(log2(N)));
+    CreateAllBinaryStrings(binary_strings, 3 * t +  2 * ceil(log2(N + 1)));
     /// flag denoting if a binary string holds the constraint w.r.t all the strands we're checking (N).
     int constraint_approved_fo_all = 1;
     for(int i = 0; i < binary_strings.size(); i++){
@@ -536,6 +535,7 @@ void encoding_algorithm(
         on brute force manner or not  NEED TO BE FIXED.
      **/
     int len = index_length + 1 + delta_1_size + delta_2_size + t * ceil(log2(M));
+    int len2 = index_length + 1 + delta_1_size + delta_2_size + 3*t + 2 * delta_1_size;
     if(BruteForceOrNot){
         if(strands_data_length < index_length + 1 + delta_1_size + delta_2_size + 3*t + 2 * delta_1_size){
             cout << "strand length dosent hold the constraint" << endl;
@@ -557,6 +557,9 @@ void encoding_algorithm(
 
     ///  while we go through all the indexes
     for(int i = 0; i < strands.size(); i++){
+        if(i == 34){
+            int stop = 1;
+        }
         /// (up)LM−1 = 1
         encoded_strands.find(p)->second.setLastBit(1);
         vector<tuple<int,int>> B;
@@ -585,16 +588,20 @@ void encoding_algorithm(
         vector<int> w_l;
         vector<int> delta_1_binary;
         vector<int> delta_2_binary;
+        int N = 0;
+        /// calc s_e_i
+        S_e_i(
+                strands, e, current_i, distanceMetric, data_of_potential_strands,
+                encoded_strands, index_length, N);
 
-        S_e_i(strands, e, current_i, distanceMetric, data_of_potential_strands, encoded_strands, index_length);
         if (BruteForceOrNot) {
 
             W_l_S_t_BruteForce(data_of_potential_strands, t, w_l, distanceMetric,
-                    data_of_potential_strands.size(), index_length);
+                    N, index_length);
         }
         else {
             W_l_S_t_NoBruteForce(data_of_potential_strands, t, w_l, distanceMetric,
-                    data_of_potential_strands.size(), index_length);
+                    N, index_length);
         }
 
         /// creating delta1

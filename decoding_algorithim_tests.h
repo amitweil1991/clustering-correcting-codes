@@ -11,14 +11,14 @@
 
 
 void createEncodedStrands(unordered_map<int, encoded_strand_binary>& encoded_strands){
-    vector<int> data_0{0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1};
-    vector<int> data_1{0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
-    vector<int> data_2{1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1};
-    vector<int> data_3{0, 0, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1};
-    vector<int> data_4{1, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1};
-    vector<int> data_5{0, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1};
+    vector<int> data_0{1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+    vector<int> data_1{0, 1, 1, 0, 1, 0, 1, 1, 0, 0, 1, 0, 1, 1, 0, 1};
+    vector<int> data_2{1, 0, 0, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1};
+    vector<int> data_3{0, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1};
+    vector<int> data_4{1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1};
+    vector<int> data_5{0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1};
     vector<int> data_6{1, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1};
-    vector<int> data_7{0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+    vector<int> data_7{0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
     encoded_strand_binary zero(data_0, false);
     encoded_strand_binary one(data_1, false);
     encoded_strand_binary two(data_2, false);
@@ -79,6 +79,14 @@ void testDecodeData(){
 
 
 void testDecodingAlgorithim(){
+    unordered_map<int, encoded_strand_binary> encoded_strands;
+    createEncodedStrands(encoded_strands);
+    int strand_data_length = 16;
+    int e = 1;
+    int t = 2;
+    DecodingAlgorithim(encoded_strands, strand_data_length, e, t, HammingDistance);
+    printAllEncoded(encoded_strands);
+
 
 }
 
