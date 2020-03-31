@@ -534,8 +534,8 @@ void encoding_algorithm(
         where w is the number of bits needed for encoding w_l (which its length depends wether we find it
         on brute force manner or not  NEED TO BE FIXED.
      **/
-    int len = index_length + 1 + delta_1_size + delta_2_size + t * ceil(log2(M));
-    int len2 = index_length + 1 + delta_1_size + delta_2_size + 3*t + 2 * delta_1_size;
+//    int len = index_length + 1 + delta_1_size + delta_2_size + t * ceil(log2(M));
+//    int len2 = index_length + 1 + delta_1_size + delta_2_size + 3*t + 2 * delta_1_size;
     if(BruteForceOrNot){
         if(strands_data_length < index_length + 1 + delta_1_size + delta_2_size + 3*t + 2 * delta_1_size){
             cout << "strand length dosent hold the constraint" << endl;

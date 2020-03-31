@@ -408,12 +408,6 @@ void TestsetNextNodeInList(vector<int> index_in_binary){
 }
 
 
-
-
-
-
-
-
 void testConvertIntVecToCharVec(){
     vector<char> f;
     vector<int> t{1, 0, 0, 1};
@@ -423,57 +417,153 @@ void testConvertIntVecToCharVec(){
     }
 }
 
-int main(){
+/*!
+ * sets t and e according to the raw and tao given parameters, the number of strands, their data length and
+ * if brute force manner is conducted or not.
+ * @param e - index constraint
+ * @param t - data constraint
+ * @param raw - given parameter
+ * @param tao - given paramter
+ * @param strands_num - number of strands in the system
+ * @param strands_data_length - the length of the data of the strands
+ * @param bruteForce - wether we're using bruteforce manner or not.
+ */
+void set_e_and_t(
+        int* e,
+        int* t,
+        int raw,
+        int tao,
+        int strands_num,
+        int strands_data_length,
+        bool bruteForce)
+{
+    *t = raw * 4 + 1;
+    int index_length = ceil(log2(strands_num));
+    int delta_2_size = ceil(log2(strands_data_length)) * (*t - 1);
+    for(int i = 2 * tao; i >= tao; i--) {
+        int delta_1_size = ceil(log2(index_length)) * i;
+        if (bruteForce) {
+            if (strands_data_length < index_length + 1 + delta_1_size + delta_2_size + 3 * *(t) + 2 * delta_1_size) {
+                continue;
+            } else {
+                *e = i;
+                return;
+            }
+        } else {
+            if (strands_data_length < index_length + 1 + delta_1_size + delta_2_size + *(t) * ceil(log2(strands_num))) {
+                continue;
+            } else {
+                *e = i;
+                return;
+            }
+        }
+    }
+    return;
 
+}
 
-    /******* encoding algorithim tests ********/
+int main(int argc, char** argv){
 
-    /**
-   testCreateDelta1();
-   testCreateDelta2();
-   testW_lBruteForce();
-   testW_lNoBruteForce();
-   testCreateReplVector();
-   testCreateS_e_i();
-   testAddEncodedVersion();
-   testEncodingAlgorithim();
-   **/
+    if(argc > 7){
+        cout << "wrong number of parameters in the command line" << endl;
+        return 0;
+    }
 
-   /******** deocding algorithim tests ********/
+    // extracting the parameters from the command line
+    string raw_str = argv[1];
+    string tao_str = argv[2];
+    string strand_data_length_str = argv[3];
+    int raw = stoi(raw_str);
+    int tao = stoi(tao_str);
+    int strand_data_length = stoi(strand_data_length_str);
 
-   /**
-   testCreateDecodingOrderList();
-   testDecodeIndex();
-   testDecodeData();
-   testDecodingAlgorithim();
-   **/
+    string assumption = argv[4];
+    string check_bruteForce = argv[5];
+    string file_to_parse = argv[6];
+    bool bruteForce = false;
+    if(check_bruteForce == "true"){
+        bruteForce = true;
+    }
 
    /**** combined test ****/
 
    unordered_map<int, vector<int>> strands;
    map<int, vector<int>> strands_map;
+   int padding = 0;
 
-    int padding = 0;
-   int L = 18;
-   ParseDataToEncoding("test_file.txt", L, strands, padding);
-   int e = 1;
-   int t = 1;
+   ParseDataToEncoding(
+           file_to_parse,
+           strand_data_length,
+           strands,
+           padding);
+
+   int e = -1;
+   int t = -1;
    unordered_map<int, encoded_strand_binary> encoded_strands;
    map<int, encoded_strand_binary> encoded_strands_map;
 
 
-   convertUnorderedMapBeforeEncodingToMap(strands, strands_map);
-   exportStrandsBeforeEncodingToFile("results_before_encoding.txt", strands_map, padding);
+   convertUnorderedMapBeforeEncodingToMap(
+           strands,
+           strands_map);
 
-   encoding_algorithm(strands, e, t, L, HammingDistance, encoded_strands, false);
-   convertUnorderedMapToMap(encoded_strands, encoded_strands_map);
+   exportStrandsBeforeEncodingToFile(
+           "results_before_encoding.txt",
+           strands_map,
+           padding);
 
-   exportStrandsToFile("results_after_encoding.txt", encoded_strands_map, padding);
-   DecodingAlgorithim(encoded_strands, L, e, t, HammingDistance);
+   set_e_and_t(
+           &e,
+           &t,
+           raw,
+           tao,
+           strands.size(),
+           strand_data_length,
+           bruteForce);
+
+   if(e == -1){
+       cout << "the given strands data length is not holding the encoding constraints" << endl;
+       return 0;
+   }
+
+   encoding_algorithm(
+           strands,
+           e,
+           t,
+           strand_data_length,
+           HammingDistance,
+           encoded_strands,
+           bruteForce);
+
+   convertUnorderedMapToMap(
+           encoded_strands,
+           encoded_strands_map);
+
+   exportStrandsToFile(
+           "results_after_encoding.txt",
+           encoded_strands_map,
+           padding);
+
+   /// TODO
+
+
+   DecodingAlgorithim(
+           encoded_strands,
+           strand_data_length,
+           e,
+           t,
+           HammingDistance);
 
    encoded_strands_map.clear();
-   convertUnorderedMapToMap(encoded_strands, encoded_strands_map);
-   exportStrandsToFile("results_after_decoding.txt", encoded_strands_map, padding);
+
+   convertUnorderedMapToMap(
+           encoded_strands,
+           encoded_strands_map);
+
+   exportStrandsToFile(
+           "results_after_decoding.txt",
+           encoded_strands_map,
+           padding);
 
 
 
@@ -497,16 +587,35 @@ int main(){
 //    testCreateBinaryFromDelta2();
 //    testCreateOneBinaryVectorFromEncodedData();
 //    testFindPairToBeFixed();
-//        unordered_map<int, encoded_strand> encoded_strands;
-//testEncodingAlgorithim(encoded_strands);
+//    unordered_map<int, encoded_strand> encoded_strands;
+//    testEncodingAlgorithim(encoded_strands);
 //    unordered_map<int, vector<int>> strands;
 //    ParseDataToEncoding("test_file.txt", 10, strands);
+//    testEncodingAlgorithim();
+//    testcreateDecodingOrderList();
 
+/******* encoding algorithim tests ********/
 
+    /**
+   testCreateDelta1();
+   testCreateDelta2();
+   testW_lBruteForce();
+   testW_lNoBruteForce();
+   testCreateReplVector();
+   testCreateS_e_i();
+   testAddEncodedVersion();
+   testEncodingAlgorithim();
+   **/
 
+    /******** deocding algorithim tests ********/
 
-//testEncodingAlgorithim();
-  //  testcreateDecodingOrderList();
+    /**
+    testCreateDecodingOrderList();
+    testDecodeIndex();
+    testDecodeData();
+    testDecodingAlgorithim();
+    **/
+
 
 
 

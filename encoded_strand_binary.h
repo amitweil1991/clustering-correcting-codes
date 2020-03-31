@@ -187,6 +187,7 @@ public:
             int t,
             int index,
             int (*distanceMetric)(vector<int>, vector<int>)){
+
         /// in case brute force == true, w_l = 3t + 2*logN
         int w_l_size = calculate_wl_size(M, e, t, index, distanceMetric);
         int index_length = ceil(log2(M));
