@@ -462,6 +462,129 @@ void set_e_and_t(
 
 }
 
+void updateMapWithDuplicatesNumber(vector<duplicateStrandWiteErrors>& duplicate_strands, std::map<vector<int>, int>& num_of_duplicates_from_each_strand){
+    for (int i = 0; i < duplicate_strands.size(); ++i) {
+        auto it = num_of_duplicates_from_each_strand.find(duplicate_strands[i].getDataAfterSimulation());
+        if(it == num_of_duplicates_from_each_strand.end()){
+            pair<vector<int>,int> p(duplicate_strands[i].getDataAfterSimulation(),1);
+            num_of_duplicates_from_each_strand.insert(p);
+        }
+        else{
+            pair<vector<int>,int> p2(it->first, it->second+1);
+            num_of_duplicates_from_each_strand.erase(it);
+            num_of_duplicates_from_each_strand.insert(p2);
+        }
+    }
+}
+
+int chackOrigIndex(vector<int>& strand, vector<duplicateStrandWiteErrors> & duplicate_strands){
+    for (int i = 0; i < duplicate_strands.size(); ++i) {
+        if(duplicate_strands[i].getDataAfterSimulation() == strand) {
+            return duplicate_strands[i].getOrigIndex();
+        }
+    }
+}
+
+void printClusters(errorIdentiﬁcationInCluster& clusters, unordered_map<int,encoded_strand_binary>& map){
+    std::map<vector<int>, int> num_of_duplicates_from_each_strand;
+
+    for (int j = 0; j < clusters.getMap().size(); ++j) {
+        int counter_good_strand = 0, counter_bad_strand = 0;
+        auto map_it = map.find(j);
+        encoded_strand_binary the_orig_strand = map_it->second;
+        auto it = clusters.getMap().find(j);
+        if(it == clusters.getMap().end()){
+            cout << "Simulation test:: Can't find the Key " << j << " in the clusters's hash" << endl;
+        }
+        else{
+            cout << "cluster with index " << j << " : the original strand to this cluster is ";
+            for (int l = 0; l < the_orig_strand.get_encoded_data().size(); ++l) {
+                cout << the_orig_strand.get_encoded_data()[l] << " ";
+            }
+            cout << endl;
+
+            updateMapWithDuplicatesNumber(it->second.getDuplicateStrands(), num_of_duplicates_from_each_strand);
+
+            for (auto it_map = num_of_duplicates_from_each_strand.begin(); it_map != num_of_duplicates_from_each_strand.end() ; ++it_map) {
+                vector<int> vec = it_map->first;
+                if( chackOrigIndex(vec, it->second.getDuplicateStrands()) == j ) counter_good_strand += it_map->second;
+                else counter_bad_strand += it_map->second;
+                int strand_in_map_size = it_map->first.size();
+                for (int k = 0; k < strand_in_map_size; ++k) {
+                    cout << it_map->first[k] << " ";
+                }
+                cout << "::: " << it_map->second << " duplicates";
+                cout << " ::: orig index is " << chackOrigIndex(vec, it->second.getDuplicateStrands()) << endl;
+            }
+        }
+        cout << "The number of strands under this cluster is : " << it->second.getDuplicateStrands().size() << endl;
+        cout << "The number of CORRECT strands under this cluster is : " << counter_good_strand << endl;
+        cout << "The number of WRONG strands under this cluster is : " << counter_bad_strand << endl;
+
+        cout << "##  The estimated original strand is : ";
+        if(it->second.getEstimatedOrigStrand().size() == 0) cout << " --- " << endl << endl;
+        else {
+            for (int m = 0; m < it->second.getEstimatedOrigStrand().size(); ++m) {
+                cout << it->second.getEstimatedOrigStrand()[m] << " ";
+            }
+            cout << endl << endl;
+        }
+        num_of_duplicates_from_each_strand.clear();
+    }
+}
+
+void printDataToFile(errorIdentiﬁcationInCluster& clusters, unordered_map<int,encoded_strand_binary>& map, string fileName){
+    std::ofstream myfile;
+    myfile.open(fileName);
+    /// "/Users/elongrubman/Desktop/"
+    std::map<vector<int>, int> num_of_duplicates_from_each_strand;
+
+    for (int j = 0; j < clusters.getMap().size(); ++j) {
+        int counter_good_strand = 0, counter_bad_strand = 0;
+        auto map_it = map.find(j);
+        encoded_strand_binary the_orig_strand = map_it->second;
+        auto it = clusters.getMap().find(j);
+        if(it == clusters.getMap().end()){
+            myfile << "Simulation test:: Can't find the Key " << j << " in the clusters's hash" << endl;
+        }
+        else{
+            myfile << "cluster with index " << j << " : the original strand to this cluster is ";
+            for (int l = 0; l < the_orig_strand.get_encoded_data().size(); ++l) {
+                myfile << the_orig_strand.get_encoded_data()[l] << " ";
+            }
+            myfile << endl;
+
+            updateMapWithDuplicatesNumber(it->second.getDuplicateStrands(), num_of_duplicates_from_each_strand);
+
+            for (auto it_map = num_of_duplicates_from_each_strand.begin(); it_map != num_of_duplicates_from_each_strand.end() ; ++it_map) {
+                vector<int> vec = it_map->first;
+                if( chackOrigIndex(vec, it->second.getDuplicateStrands()) == j ) counter_good_strand += it_map->second;
+                else counter_bad_strand += it_map->second;
+                int strand_in_map_size = it_map->first.size();
+                for (int k = 0; k < strand_in_map_size; ++k) {
+                    myfile << it_map->first[k] << " ";
+                }
+                myfile << "::: " << it_map->second << " duplicates";
+                myfile << " ::: orig index is " << chackOrigIndex(vec, it->second.getDuplicateStrands()) << endl;
+            }
+        }
+        myfile << "The number of strands under this cluster is : " << it->second.getDuplicateStrands().size() << endl;
+        myfile << "The number of CORRECT strands under this cluster is : " << counter_good_strand << endl;
+        myfile << "The number of WRONG strands under this cluster is : " << counter_bad_strand << endl;
+
+        myfile << "##  The estimated original strand is : ";
+        if(it->second.getEstimatedOrigStrand().size() == 0) myfile << " --- " << endl << endl;
+        else {
+            for (int m = 0; m < it->second.getEstimatedOrigStrand().size(); ++m) {
+                myfile << it->second.getEstimatedOrigStrand()[m] << " ";
+            }
+            myfile << endl << endl;
+        }
+        num_of_duplicates_from_each_strand.clear();
+    }
+}
+
+
 int main(int argc, char** argv){
 
     if(argc > 7){
@@ -546,7 +669,28 @@ int main(int argc, char** argv){
 
    /// TODO
 
+    unordered_map<int, encoded_strand_binary> encoded_strands_to_elon = encoded_strands;
 
+    errorIdentiﬁcationInCluster clusters(tao,raw,e,t,encoded_strands_to_elon,assumption);
+
+//    cout << "#### Clusters mode BEFORE identify errors : ####" << endl << endl;
+//    printClusters(clusters, encoded_strands);
+
+    printDataToFile(clusters, encoded_strands_to_elon, "status_after_errors_simulations.txt");
+
+    clusters.algorithmToIdentifyErrors();
+
+//    cout << "#### Clusters mode AFTER IDENTIFY errors : ####" << endl << endl;
+//    printClusters(clusters, encoded_strands);
+
+    clusters.algorithmToFixErrors();
+
+//    cout << "#### Clusters mode AFTER FIX errors : ####" << endl << endl;
+//    printClusters(clusters, encoded_strands);
+
+    printDataToFile(clusters, encoded_strands_to_elon, "status_after_fix_errors.txt");
+
+    ///TODO
    DecodingAlgorithim(
            encoded_strands,
            strand_data_length,

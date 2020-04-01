@@ -12,5 +12,9 @@ add_executable(clustering_correcting_codes_project
         includes.h
         decoding_algorithim_tests.h
         decoding_algorithim.h
-        encoding_algorithim_tests.h)
+        encoding_algorithim_tests.h
+        clusterAfterSimulation.h
+        duplicateStrandWiteErrors.h
+        errorIdentiﬁcationInCluster.h
+        simulator.h)
 

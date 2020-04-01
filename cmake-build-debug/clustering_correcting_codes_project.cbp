@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="clustering_correcting_codes_project"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/elongrubman/clustering-correcting-codes/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/elongrubman/clustering-correcting-codes/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/elongrubman/clustering-correcting-codes/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clustering_correcting_codes_project">
+				<Option output="/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/clustering_correcting_codes_project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/elongrubman/clustering-correcting-codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clustering_correcting_codes_project"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="clustering_correcting_codes_project/fast">
+				<Option output="/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/clustering_correcting_codes_project" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/elongrubman/clustering-correcting-codes/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clustering_correcting_codes_project/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/elongrubman/clustering-correcting-codes/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/clusterAfterSimulation.h">
+			<Option target="clustering_correcting_codes_project"/>
+		</Unit>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/decoding_algorithim.h">
+			<Option target="clustering_correcting_codes_project"/>
+		</Unit>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/decoding_algorithim_tests.h">
+			<Option target="clustering_correcting_codes_project"/>
+		</Unit>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/duplicateStrandWiteErrors.h">
+			<Option target="clustering_correcting_codes_project"/>
+		</Unit>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/encoded_strand_binary.h">
+			<Option target="clustering_correcting_codes_project"/>
+		</Unit>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/encoding_algorithim.h">
+			<Option target="clustering_correcting_codes_project"/>
+		</Unit>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/encoding_algorithim_tests.h">
+			<Option target="clustering_correcting_codes_project"/>
+		</Unit>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/errorIdentiﬁcationInCluster.h">
+			<Option target="clustering_correcting_codes_project"/>
+		</Unit>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/files.h">
+			<Option target="clustering_correcting_codes_project"/>
+		</Unit>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/includes.h">
+			<Option target="clustering_correcting_codes_project"/>
+		</Unit>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/main.cpp">
+			<Option target="clustering_correcting_codes_project"/>
+		</Unit>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/simulator.h">
+			<Option target="clustering_correcting_codes_project"/>
+		</Unit>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/strand.h">
+			<Option target="clustering_correcting_codes_project"/>
+		</Unit>
+		<Unit filename="/Users/elongrubman/clustering-correcting-codes/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -15,7 +15,7 @@
 #include <vector>
 #include <fstream>
 #include <string>
-#endif //CLUSTERING_CORRECTING_CODES_PROJECT_INCLUDES_H
+//#endif //CLUSTERING_CORRECTING_CODES_PROJECT_INCLUDES_H
 
 using namespace std;
 
@@ -182,3 +182,4 @@ void distanceByOneFromSet(
     }
 }
 
+#endif

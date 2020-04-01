@@ -1,0 +1,1346 @@
+cluster with index 0 : the original strand to this cluster is 0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 344 duplicates ::: orig index is 0
+0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 69 duplicates ::: orig index is 1
+0 0 0 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 67 duplicates ::: orig index is 2
+0 0 0 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 60 duplicates ::: orig index is 4
+0 0 0 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 14 duplicates ::: orig index is 8
+0 0 1 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 57 duplicates ::: orig index is 16
+1 0 0 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 67 duplicates ::: orig index is 64
+1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 ::: 13 duplicates ::: orig index is 32
+The number of strands under this cluster is : 691
+The number of CORRECT strands under this cluster is : 344
+The number of WRONG strands under this cluster is : 347
+##  The estimated original strand is :  --- 
+
+cluster with index 1 : the original strand to this cluster is 0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 
+0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 69 duplicates ::: orig index is 0
+0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 374 duplicates ::: orig index is 1
+0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 77 duplicates ::: orig index is 3
+0 0 0 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 21 duplicates ::: orig index is 5
+0 0 0 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 26 duplicates ::: orig index is 9
+0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 85 duplicates ::: orig index is 17
+0 1 0 0 0 1 1 0 0 1 1 0 1 0 0 0 0 1 ::: 80 duplicates ::: orig index is 33
+1 0 0 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 60 duplicates ::: orig index is 65
+The number of strands under this cluster is : 792
+The number of CORRECT strands under this cluster is : 374
+The number of WRONG strands under this cluster is : 418
+##  The estimated original strand is :  --- 
+
+cluster with index 2 : the original strand to this cluster is 0 0 0 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 59 duplicates ::: orig index is 0
+0 0 0 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 460 duplicates ::: orig index is 2
+0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 80 duplicates ::: orig index is 3
+0 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 48 duplicates ::: orig index is 6
+0 0 0 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 68 duplicates ::: orig index is 10
+0 0 1 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 38 duplicates ::: orig index is 18
+1 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 65 duplicates ::: orig index is 66
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 ::: 4 duplicates ::: orig index is 34
+The number of strands under this cluster is : 822
+The number of CORRECT strands under this cluster is : 460
+The number of WRONG strands under this cluster is : 362
+##  The estimated original strand is :  --- 
+
+cluster with index 3 : the original strand to this cluster is 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 
+0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 46 duplicates ::: orig index is 1
+0 0 0 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 83 duplicates ::: orig index is 2
+0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 496 duplicates ::: orig index is 3
+0 0 0 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 17 duplicates ::: orig index is 7
+0 0 0 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 50 duplicates ::: orig index is 11
+0 0 1 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 104 duplicates ::: orig index is 19
+0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 59 duplicates ::: orig index is 35
+1 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 50 duplicates ::: orig index is 67
+The number of strands under this cluster is : 905
+The number of CORRECT strands under this cluster is : 496
+The number of WRONG strands under this cluster is : 409
+##  The estimated original strand is :  --- 
+
+cluster with index 4 : the original strand to this cluster is 0 0 0 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 59 duplicates ::: orig index is 0
+0 0 0 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 305 duplicates ::: orig index is 4
+0 0 0 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 21 duplicates ::: orig index is 5
+0 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 49 duplicates ::: orig index is 6
+0 0 0 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 42 duplicates ::: orig index is 12
+0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 46 duplicates ::: orig index is 20
+0 1 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 23 duplicates ::: orig index is 36
+1 0 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 11 duplicates ::: orig index is 68
+The number of strands under this cluster is : 556
+The number of CORRECT strands under this cluster is : 305
+The number of WRONG strands under this cluster is : 251
+##  The estimated original strand is :  --- 
+
+cluster with index 5 : the original strand to this cluster is 0 0 0 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 
+0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 57 duplicates ::: orig index is 1
+0 0 0 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 61 duplicates ::: orig index is 4
+0 0 0 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 182 duplicates ::: orig index is 5
+0 0 0 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 21 duplicates ::: orig index is 7
+0 0 0 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 28 duplicates ::: orig index is 13
+0 0 1 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 13 duplicates ::: orig index is 21
+0 1 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 12 duplicates ::: orig index is 37
+1 0 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 48 duplicates ::: orig index is 69
+The number of strands under this cluster is : 422
+The number of CORRECT strands under this cluster is : 182
+The number of WRONG strands under this cluster is : 240
+##  The estimated original strand is :  --- 
+
+cluster with index 6 : the original strand to this cluster is 0 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 0 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 85 duplicates ::: orig index is 2
+0 0 0 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 44 duplicates ::: orig index is 4
+0 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 326 duplicates ::: orig index is 6
+0 0 0 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 15 duplicates ::: orig index is 7
+0 0 0 1 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 33 duplicates ::: orig index is 14
+0 0 1 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 69 duplicates ::: orig index is 22
+0 1 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 61 duplicates ::: orig index is 38
+1 0 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 24 duplicates ::: orig index is 70
+The number of strands under this cluster is : 657
+The number of CORRECT strands under this cluster is : 326
+The number of WRONG strands under this cluster is : 331
+##  The estimated original strand is :  --- 
+
+cluster with index 7 : the original strand to this cluster is 0 0 0 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 
+0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 82 duplicates ::: orig index is 3
+0 0 0 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 20 duplicates ::: orig index is 5
+0 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 59 duplicates ::: orig index is 6
+0 0 0 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 242 duplicates ::: orig index is 7
+0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 ::: 79 duplicates ::: orig index is 15
+0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 69 duplicates ::: orig index is 23
+0 1 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 63 duplicates ::: orig index is 39
+1 0 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 16 duplicates ::: orig index is 71
+The number of strands under this cluster is : 630
+The number of CORRECT strands under this cluster is : 242
+The number of WRONG strands under this cluster is : 388
+##  The estimated original strand is :  --- 
+
+cluster with index 8 : the original strand to this cluster is 0 0 0 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 74 duplicates ::: orig index is 0
+0 0 0 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 245 duplicates ::: orig index is 8
+0 0 0 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 37 duplicates ::: orig index is 9
+0 0 0 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 72 duplicates ::: orig index is 10
+0 0 0 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 54 duplicates ::: orig index is 12
+0 0 1 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 50 duplicates ::: orig index is 24
+0 1 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 75 duplicates ::: orig index is 40
+1 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 48 duplicates ::: orig index is 72
+The number of strands under this cluster is : 655
+The number of CORRECT strands under this cluster is : 245
+The number of WRONG strands under this cluster is : 410
+##  The estimated original strand is :  --- 
+
+cluster with index 9 : the original strand to this cluster is 0 0 0 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 
+0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 65 duplicates ::: orig index is 1
+0 0 0 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 14 duplicates ::: orig index is 8
+0 0 0 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 250 duplicates ::: orig index is 9
+0 0 0 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 39 duplicates ::: orig index is 11
+0 0 0 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 24 duplicates ::: orig index is 13
+0 0 1 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 68 duplicates ::: orig index is 25
+0 1 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 51 duplicates ::: orig index is 41
+1 0 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 17 duplicates ::: orig index is 73
+The number of strands under this cluster is : 528
+The number of CORRECT strands under this cluster is : 250
+The number of WRONG strands under this cluster is : 278
+##  The estimated original strand is :  --- 
+
+cluster with index 10 : the original strand to this cluster is 0 0 0 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 0 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 78 duplicates ::: orig index is 2
+0 0 0 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 12 duplicates ::: orig index is 8
+0 0 0 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 397 duplicates ::: orig index is 10
+0 0 0 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 31 duplicates ::: orig index is 11
+0 0 0 1 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 33 duplicates ::: orig index is 14
+0 0 1 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 10 duplicates ::: orig index is 26
+0 1 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 33 duplicates ::: orig index is 42
+1 0 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 75 duplicates ::: orig index is 74
+The number of strands under this cluster is : 669
+The number of CORRECT strands under this cluster is : 397
+The number of WRONG strands under this cluster is : 272
+##  The estimated original strand is :  --- 
+
+cluster with index 11 : the original strand to this cluster is 0 0 0 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 
+0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 90 duplicates ::: orig index is 3
+0 0 0 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 36 duplicates ::: orig index is 9
+0 0 0 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 59 duplicates ::: orig index is 10
+0 0 0 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 357 duplicates ::: orig index is 11
+0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 ::: 93 duplicates ::: orig index is 15
+0 0 1 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 77 duplicates ::: orig index is 27
+0 1 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 55 duplicates ::: orig index is 43
+1 0 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 51 duplicates ::: orig index is 75
+The number of strands under this cluster is : 818
+The number of CORRECT strands under this cluster is : 357
+The number of WRONG strands under this cluster is : 461
+##  The estimated original strand is :  --- 
+
+cluster with index 12 : the original strand to this cluster is 0 0 0 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 0 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 53 duplicates ::: orig index is 4
+0 0 0 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 22 duplicates ::: orig index is 8
+0 0 0 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 346 duplicates ::: orig index is 12
+0 0 0 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 31 duplicates ::: orig index is 13
+0 0 0 1 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 35 duplicates ::: orig index is 14
+0 0 1 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 64 duplicates ::: orig index is 28
+0 1 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 32 duplicates ::: orig index is 44
+1 0 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 38 duplicates ::: orig index is 76
+The number of strands under this cluster is : 621
+The number of CORRECT strands under this cluster is : 346
+The number of WRONG strands under this cluster is : 275
+##  The estimated original strand is :  --- 
+
+cluster with index 13 : the original strand to this cluster is 0 0 0 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 
+0 0 0 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 21 duplicates ::: orig index is 5
+0 0 0 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 35 duplicates ::: orig index is 9
+0 0 0 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 72 duplicates ::: orig index is 12
+0 0 0 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 261 duplicates ::: orig index is 13
+0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 ::: 83 duplicates ::: orig index is 15
+0 0 1 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 57 duplicates ::: orig index is 29
+0 1 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 33 duplicates ::: orig index is 45
+1 0 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 28 duplicates ::: orig index is 77
+The number of strands under this cluster is : 590
+The number of CORRECT strands under this cluster is : 261
+The number of WRONG strands under this cluster is : 329
+##  The estimated original strand is :  --- 
+
+cluster with index 14 : the original strand to this cluster is 0 0 0 1 1 1 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 42 duplicates ::: orig index is 6
+0 0 0 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 64 duplicates ::: orig index is 10
+0 0 0 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 47 duplicates ::: orig index is 12
+0 0 0 1 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 308 duplicates ::: orig index is 14
+0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 ::: 97 duplicates ::: orig index is 15
+0 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 59 duplicates ::: orig index is 30
+0 1 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 24 duplicates ::: orig index is 46
+1 0 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 48 duplicates ::: orig index is 78
+The number of strands under this cluster is : 689
+The number of CORRECT strands under this cluster is : 308
+The number of WRONG strands under this cluster is : 381
+##  The estimated original strand is :  --- 
+
+cluster with index 15 : the original strand to this cluster is 0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 
+0 0 0 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 14 duplicates ::: orig index is 7
+0 0 0 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 40 duplicates ::: orig index is 11
+0 0 0 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 37 duplicates ::: orig index is 13
+0 0 0 1 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 36 duplicates ::: orig index is 14
+0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 ::: 479 duplicates ::: orig index is 15
+0 1 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 34 duplicates ::: orig index is 47
+1 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 27 duplicates ::: orig index is 79
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ::: 7 duplicates ::: orig index is 31
+The number of strands under this cluster is : 674
+The number of CORRECT strands under this cluster is : 479
+The number of WRONG strands under this cluster is : 195
+##  The estimated original strand is :  --- 
+
+cluster with index 16 : the original strand to this cluster is 0 0 1 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 61 duplicates ::: orig index is 0
+0 0 1 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 348 duplicates ::: orig index is 16
+0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 82 duplicates ::: orig index is 17
+0 0 1 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 41 duplicates ::: orig index is 18
+0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 39 duplicates ::: orig index is 20
+0 0 1 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 53 duplicates ::: orig index is 24
+0 1 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 59 duplicates ::: orig index is 48
+1 0 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 57 duplicates ::: orig index is 80
+The number of strands under this cluster is : 740
+The number of CORRECT strands under this cluster is : 348
+The number of WRONG strands under this cluster is : 392
+##  The estimated original strand is :  --- 
+
+cluster with index 17 : the original strand to this cluster is 0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 
+0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 46 duplicates ::: orig index is 1
+0 0 1 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 53 duplicates ::: orig index is 16
+0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 511 duplicates ::: orig index is 17
+0 0 1 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 78 duplicates ::: orig index is 19
+0 0 1 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 13 duplicates ::: orig index is 21
+0 0 1 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 54 duplicates ::: orig index is 25
+0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 80 duplicates ::: orig index is 49
+1 0 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 17 duplicates ::: orig index is 81
+The number of strands under this cluster is : 852
+The number of CORRECT strands under this cluster is : 511
+The number of WRONG strands under this cluster is : 341
+##  The estimated original strand is :  --- 
+
+cluster with index 18 : the original strand to this cluster is 0 0 1 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 0 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 83 duplicates ::: orig index is 2
+0 0 1 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 54 duplicates ::: orig index is 16
+0 0 1 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 330 duplicates ::: orig index is 18
+0 0 1 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 69 duplicates ::: orig index is 19
+0 0 1 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 67 duplicates ::: orig index is 22
+0 0 1 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 16 duplicates ::: orig index is 26
+0 1 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 75 duplicates ::: orig index is 50
+1 0 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 24 duplicates ::: orig index is 82
+The number of strands under this cluster is : 718
+The number of CORRECT strands under this cluster is : 330
+The number of WRONG strands under this cluster is : 388
+##  The estimated original strand is :  --- 
+
+cluster with index 19 : the original strand to this cluster is 0 0 1 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 
+0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 85 duplicates ::: orig index is 3
+0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 80 duplicates ::: orig index is 17
+0 0 1 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 47 duplicates ::: orig index is 18
+0 0 1 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 461 duplicates ::: orig index is 19
+0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 61 duplicates ::: orig index is 23
+0 0 1 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 56 duplicates ::: orig index is 27
+0 1 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 40 duplicates ::: orig index is 51
+1 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 42 duplicates ::: orig index is 83
+The number of strands under this cluster is : 872
+The number of CORRECT strands under this cluster is : 461
+The number of WRONG strands under this cluster is : 411
+##  The estimated original strand is :  --- 
+
+cluster with index 20 : the original strand to this cluster is 0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 0 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 50 duplicates ::: orig index is 4
+0 0 1 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 43 duplicates ::: orig index is 16
+0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 279 duplicates ::: orig index is 20
+0 0 1 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 13 duplicates ::: orig index is 21
+0 0 1 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 52 duplicates ::: orig index is 22
+0 0 1 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 66 duplicates ::: orig index is 28
+0 1 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 47 duplicates ::: orig index is 52
+1 0 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 58 duplicates ::: orig index is 84
+The number of strands under this cluster is : 608
+The number of CORRECT strands under this cluster is : 279
+The number of WRONG strands under this cluster is : 329
+##  The estimated original strand is :  --- 
+
+cluster with index 21 : the original strand to this cluster is 0 0 1 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 
+0 0 0 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 20 duplicates ::: orig index is 5
+0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 76 duplicates ::: orig index is 17
+0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 35 duplicates ::: orig index is 20
+0 0 1 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 201 duplicates ::: orig index is 21
+0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 69 duplicates ::: orig index is 23
+0 0 1 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 78 duplicates ::: orig index is 29
+0 1 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 53 duplicates ::: orig index is 53
+1 0 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 10 duplicates ::: orig index is 85
+The number of strands under this cluster is : 542
+The number of CORRECT strands under this cluster is : 201
+The number of WRONG strands under this cluster is : 341
+##  The estimated original strand is :  --- 
+
+cluster with index 22 : the original strand to this cluster is 0 0 1 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 61 duplicates ::: orig index is 6
+0 0 1 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 46 duplicates ::: orig index is 18
+0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 31 duplicates ::: orig index is 20
+0 0 1 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 432 duplicates ::: orig index is 22
+0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 68 duplicates ::: orig index is 23
+0 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 53 duplicates ::: orig index is 30
+0 1 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 49 duplicates ::: orig index is 54
+1 0 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 47 duplicates ::: orig index is 86
+The number of strands under this cluster is : 787
+The number of CORRECT strands under this cluster is : 432
+The number of WRONG strands under this cluster is : 355
+##  The estimated original strand is :  --- 
+
+cluster with index 23 : the original strand to this cluster is 0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 
+0 0 0 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 7 duplicates ::: orig index is 7
+0 0 1 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 77 duplicates ::: orig index is 19
+0 0 1 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 8 duplicates ::: orig index is 21
+0 0 1 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 70 duplicates ::: orig index is 22
+0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 406 duplicates ::: orig index is 23
+0 1 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 84 duplicates ::: orig index is 55
+1 0 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 26 duplicates ::: orig index is 87
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ::: 15 duplicates ::: orig index is 31
+The number of strands under this cluster is : 693
+The number of CORRECT strands under this cluster is : 406
+The number of WRONG strands under this cluster is : 287
+##  The estimated original strand is :  --- 
+
+cluster with index 24 : the original strand to this cluster is 0 0 1 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 0 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 20 duplicates ::: orig index is 8
+0 0 1 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 56 duplicates ::: orig index is 16
+0 0 1 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 335 duplicates ::: orig index is 24
+0 0 1 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 54 duplicates ::: orig index is 25
+0 0 1 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 13 duplicates ::: orig index is 26
+0 0 1 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 80 duplicates ::: orig index is 28
+0 1 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 64 duplicates ::: orig index is 56
+1 0 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 57 duplicates ::: orig index is 88
+The number of strands under this cluster is : 679
+The number of CORRECT strands under this cluster is : 335
+The number of WRONG strands under this cluster is : 344
+##  The estimated original strand is :  --- 
+
+cluster with index 25 : the original strand to this cluster is 0 0 1 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 
+0 0 0 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 37 duplicates ::: orig index is 9
+0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 78 duplicates ::: orig index is 17
+0 0 1 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 53 duplicates ::: orig index is 24
+0 0 1 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 362 duplicates ::: orig index is 25
+0 0 1 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 75 duplicates ::: orig index is 27
+0 0 1 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 76 duplicates ::: orig index is 29
+0 1 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 12 duplicates ::: orig index is 57
+1 0 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 50 duplicates ::: orig index is 89
+The number of strands under this cluster is : 743
+The number of CORRECT strands under this cluster is : 362
+The number of WRONG strands under this cluster is : 381
+##  The estimated original strand is :  --- 
+
+cluster with index 26 : the original strand to this cluster is 0 0 1 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 0 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 78 duplicates ::: orig index is 10
+0 0 1 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 41 duplicates ::: orig index is 18
+0 0 1 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 59 duplicates ::: orig index is 24
+0 0 1 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 256 duplicates ::: orig index is 26
+0 0 1 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 55 duplicates ::: orig index is 27
+0 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 71 duplicates ::: orig index is 30
+0 1 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 68 duplicates ::: orig index is 58
+1 0 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 64 duplicates ::: orig index is 90
+The number of strands under this cluster is : 692
+The number of CORRECT strands under this cluster is : 256
+The number of WRONG strands under this cluster is : 436
+##  The estimated original strand is :  --- 
+
+cluster with index 27 : the original strand to this cluster is 0 0 1 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 
+0 0 0 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 57 duplicates ::: orig index is 11
+0 0 1 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 88 duplicates ::: orig index is 19
+0 0 1 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 64 duplicates ::: orig index is 25
+0 0 1 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 20 duplicates ::: orig index is 26
+0 0 1 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 370 duplicates ::: orig index is 27
+0 1 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 32 duplicates ::: orig index is 59
+1 0 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 47 duplicates ::: orig index is 91
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ::: 10 duplicates ::: orig index is 31
+The number of strands under this cluster is : 688
+The number of CORRECT strands under this cluster is : 370
+The number of WRONG strands under this cluster is : 318
+##  The estimated original strand is :  --- 
+
+cluster with index 28 : the original strand to this cluster is 0 0 1 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 0 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 58 duplicates ::: orig index is 12
+0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 46 duplicates ::: orig index is 20
+0 0 1 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 41 duplicates ::: orig index is 24
+0 0 1 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 451 duplicates ::: orig index is 28
+0 0 1 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 70 duplicates ::: orig index is 29
+0 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 75 duplicates ::: orig index is 30
+0 1 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 12 duplicates ::: orig index is 60
+1 0 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 40 duplicates ::: orig index is 92
+The number of strands under this cluster is : 793
+The number of CORRECT strands under this cluster is : 451
+The number of WRONG strands under this cluster is : 342
+##  The estimated original strand is :  --- 
+
+cluster with index 29 : the original strand to this cluster is 0 0 1 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 
+0 0 0 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 38 duplicates ::: orig index is 13
+0 0 1 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 14 duplicates ::: orig index is 21
+0 0 1 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 64 duplicates ::: orig index is 25
+0 0 1 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 67 duplicates ::: orig index is 28
+0 0 1 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 430 duplicates ::: orig index is 29
+0 1 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 37 duplicates ::: orig index is 61
+1 0 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 28 duplicates ::: orig index is 93
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ::: 8 duplicates ::: orig index is 31
+The number of strands under this cluster is : 686
+The number of CORRECT strands under this cluster is : 430
+The number of WRONG strands under this cluster is : 256
+##  The estimated original strand is :  --- 
+
+cluster with index 30 : the original strand to this cluster is 0 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 0 1 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 47 duplicates ::: orig index is 14
+0 0 1 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 71 duplicates ::: orig index is 22
+0 0 1 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 20 duplicates ::: orig index is 26
+0 0 1 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 58 duplicates ::: orig index is 28
+0 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 380 duplicates ::: orig index is 30
+1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 61 duplicates ::: orig index is 62
+1 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 61 duplicates ::: orig index is 94
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ::: 14 duplicates ::: orig index is 31
+The number of strands under this cluster is : 712
+The number of CORRECT strands under this cluster is : 380
+The number of WRONG strands under this cluster is : 332
+##  The estimated original strand is :  --- 
+
+cluster with index 31 : the original strand to this cluster is 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 ::: 85 duplicates ::: orig index is 15
+0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 70 duplicates ::: orig index is 23
+0 0 1 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 64 duplicates ::: orig index is 27
+0 0 1 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 87 duplicates ::: orig index is 29
+0 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 76 duplicates ::: orig index is 30
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ::: 272 duplicates ::: orig index is 31
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 94 duplicates ::: orig index is 63
+The number of strands under this cluster is : 748
+The number of CORRECT strands under this cluster is : 272
+The number of WRONG strands under this cluster is : 476
+##  The estimated original strand is :  --- 
+
+cluster with index 32 : the original strand to this cluster is 1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 
+0 0 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 46 duplicates ::: orig index is 0
+0 1 0 0 0 1 1 0 0 1 1 0 1 0 0 0 0 1 ::: 79 duplicates ::: orig index is 33
+0 1 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 21 duplicates ::: orig index is 36
+0 1 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 71 duplicates ::: orig index is 40
+0 1 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 47 duplicates ::: orig index is 48
+1 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 30 duplicates ::: orig index is 96
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 ::: 14 duplicates ::: orig index is 34
+1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 ::: 218 duplicates ::: orig index is 32
+The number of strands under this cluster is : 526
+The number of CORRECT strands under this cluster is : 218
+The number of WRONG strands under this cluster is : 308
+##  The estimated original strand is :  --- 
+
+cluster with index 33 : the original strand to this cluster is 0 1 0 0 0 1 1 0 0 1 1 0 1 0 0 0 0 1 
+0 0 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 68 duplicates ::: orig index is 1
+0 1 0 0 0 1 1 0 0 1 1 0 1 0 0 0 0 1 ::: 434 duplicates ::: orig index is 33
+0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 63 duplicates ::: orig index is 35
+0 1 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 12 duplicates ::: orig index is 37
+0 1 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 42 duplicates ::: orig index is 41
+0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 96 duplicates ::: orig index is 49
+1 1 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 31 duplicates ::: orig index is 97
+1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 ::: 19 duplicates ::: orig index is 32
+The number of strands under this cluster is : 765
+The number of CORRECT strands under this cluster is : 434
+The number of WRONG strands under this cluster is : 331
+##  The estimated original strand is :  --- 
+
+cluster with index 34 : the original strand to this cluster is 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 
+0 0 0 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 77 duplicates ::: orig index is 2
+0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 56 duplicates ::: orig index is 35
+0 1 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 67 duplicates ::: orig index is 38
+0 1 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 44 duplicates ::: orig index is 42
+0 1 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 78 duplicates ::: orig index is 50
+1 1 0 0 1 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 52 duplicates ::: orig index is 98
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 ::: 224 duplicates ::: orig index is 34
+1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 ::: 16 duplicates ::: orig index is 32
+The number of strands under this cluster is : 614
+The number of CORRECT strands under this cluster is : 224
+The number of WRONG strands under this cluster is : 390
+##  The estimated original strand is :  --- 
+
+cluster with index 35 : the original strand to this cluster is 0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 
+0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 66 duplicates ::: orig index is 3
+0 1 0 0 0 1 1 0 0 1 1 0 1 0 0 0 0 1 ::: 71 duplicates ::: orig index is 33
+0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 364 duplicates ::: orig index is 35
+0 1 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 61 duplicates ::: orig index is 39
+0 1 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 62 duplicates ::: orig index is 43
+0 1 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 34 duplicates ::: orig index is 51
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 ::: 11 duplicates ::: orig index is 34
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 52 duplicates ::: orig index is 99
+The number of strands under this cluster is : 721
+The number of CORRECT strands under this cluster is : 364
+The number of WRONG strands under this cluster is : 357
+##  The estimated original strand is :  --- 
+
+cluster with index 36 : the original strand to this cluster is 0 1 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 0 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 67 duplicates ::: orig index is 4
+0 1 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 204 duplicates ::: orig index is 36
+0 1 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 13 duplicates ::: orig index is 37
+0 1 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 68 duplicates ::: orig index is 38
+0 1 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 34 duplicates ::: orig index is 44
+0 1 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 43 duplicates ::: orig index is 52
+1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 ::: 13 duplicates ::: orig index is 100
+1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 ::: 19 duplicates ::: orig index is 32
+The number of strands under this cluster is : 461
+The number of CORRECT strands under this cluster is : 204
+The number of WRONG strands under this cluster is : 257
+##  The estimated original strand is :  --- 
+
+cluster with index 37 : the original strand to this cluster is 0 1 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 
+0 0 0 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 23 duplicates ::: orig index is 5
+0 1 0 0 0 1 1 0 0 1 1 0 1 0 0 0 0 1 ::: 85 duplicates ::: orig index is 33
+0 1 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 24 duplicates ::: orig index is 36
+0 1 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 209 duplicates ::: orig index is 37
+0 1 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 82 duplicates ::: orig index is 39
+0 1 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 33 duplicates ::: orig index is 45
+0 1 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 63 duplicates ::: orig index is 53
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 34 duplicates ::: orig index is 101
+The number of strands under this cluster is : 553
+The number of CORRECT strands under this cluster is : 209
+The number of WRONG strands under this cluster is : 344
+##  The estimated original strand is :  --- 
+
+cluster with index 38 : the original strand to this cluster is 0 1 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 0 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 59 duplicates ::: orig index is 6
+0 1 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 23 duplicates ::: orig index is 36
+0 1 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 409 duplicates ::: orig index is 38
+0 1 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 67 duplicates ::: orig index is 39
+0 1 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 22 duplicates ::: orig index is 46
+0 1 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 26 duplicates ::: orig index is 54
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 ::: 12 duplicates ::: orig index is 34
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 17 duplicates ::: orig index is 102
+The number of strands under this cluster is : 635
+The number of CORRECT strands under this cluster is : 409
+The number of WRONG strands under this cluster is : 226
+##  The estimated original strand is :  --- 
+
+cluster with index 39 : the original strand to this cluster is 0 1 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 ::: 79 duplicates ::: orig index is 103
+0 0 0 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 12 duplicates ::: orig index is 7
+0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 63 duplicates ::: orig index is 35
+0 1 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 23 duplicates ::: orig index is 37
+0 1 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 57 duplicates ::: orig index is 38
+0 1 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 365 duplicates ::: orig index is 39
+0 1 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 41 duplicates ::: orig index is 47
+0 1 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 79 duplicates ::: orig index is 55
+The number of strands under this cluster is : 719
+The number of CORRECT strands under this cluster is : 365
+The number of WRONG strands under this cluster is : 354
+##  The estimated original strand is :  --- 
+
+cluster with index 40 : the original strand to this cluster is 0 1 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 0 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 6 duplicates ::: orig index is 8
+0 1 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 486 duplicates ::: orig index is 40
+0 1 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 49 duplicates ::: orig index is 41
+0 1 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 30 duplicates ::: orig index is 42
+0 1 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 39 duplicates ::: orig index is 44
+0 1 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 58 duplicates ::: orig index is 56
+1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 ::: 9 duplicates ::: orig index is 32
+The number of strands under this cluster is : 677
+The number of CORRECT strands under this cluster is : 486
+The number of WRONG strands under this cluster is : 191
+##  The estimated original strand is :  --- 
+
+cluster with index 41 : the original strand to this cluster is 0 1 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 
+0 0 0 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 29 duplicates ::: orig index is 9
+0 1 0 0 0 1 1 0 0 1 1 0 1 0 0 0 0 1 ::: 78 duplicates ::: orig index is 33
+0 1 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 76 duplicates ::: orig index is 40
+0 1 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 281 duplicates ::: orig index is 41
+0 1 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 55 duplicates ::: orig index is 43
+0 1 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 31 duplicates ::: orig index is 45
+0 1 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 17 duplicates ::: orig index is 57
+The number of strands under this cluster is : 567
+The number of CORRECT strands under this cluster is : 281
+The number of WRONG strands under this cluster is : 286
+##  The estimated original strand is :  --- 
+
+cluster with index 42 : the original strand to this cluster is 0 1 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 0 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 67 duplicates ::: orig index is 10
+0 1 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 81 duplicates ::: orig index is 40
+0 1 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 270 duplicates ::: orig index is 42
+0 1 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 65 duplicates ::: orig index is 43
+0 1 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 25 duplicates ::: orig index is 46
+0 1 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 84 duplicates ::: orig index is 58
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 ::: 7 duplicates ::: orig index is 34
+The number of strands under this cluster is : 599
+The number of CORRECT strands under this cluster is : 270
+The number of WRONG strands under this cluster is : 329
+##  The estimated original strand is :  --- 
+
+cluster with index 43 : the original strand to this cluster is 0 1 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 
+0 0 0 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 31 duplicates ::: orig index is 11
+0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 58 duplicates ::: orig index is 35
+0 1 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 35 duplicates ::: orig index is 41
+0 1 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 33 duplicates ::: orig index is 42
+0 1 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 360 duplicates ::: orig index is 43
+0 1 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 37 duplicates ::: orig index is 47
+0 1 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 33 duplicates ::: orig index is 59
+The number of strands under this cluster is : 587
+The number of CORRECT strands under this cluster is : 360
+The number of WRONG strands under this cluster is : 227
+##  The estimated original strand is :  --- 
+
+cluster with index 44 : the original strand to this cluster is 0 1 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 0 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 60 duplicates ::: orig index is 12
+0 1 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 23 duplicates ::: orig index is 36
+0 1 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 83 duplicates ::: orig index is 40
+0 1 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 213 duplicates ::: orig index is 44
+0 1 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 32 duplicates ::: orig index is 45
+0 1 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 22 duplicates ::: orig index is 46
+0 1 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 9 duplicates ::: orig index is 60
+The number of strands under this cluster is : 442
+The number of CORRECT strands under this cluster is : 213
+The number of WRONG strands under this cluster is : 229
+##  The estimated original strand is :  --- 
+
+cluster with index 45 : the original strand to this cluster is 0 1 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 
+0 0 0 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 30 duplicates ::: orig index is 13
+0 1 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 12 duplicates ::: orig index is 37
+0 1 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 53 duplicates ::: orig index is 41
+0 1 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 30 duplicates ::: orig index is 44
+0 1 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 196 duplicates ::: orig index is 45
+0 1 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 39 duplicates ::: orig index is 47
+0 1 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 48 duplicates ::: orig index is 61
+The number of strands under this cluster is : 408
+The number of CORRECT strands under this cluster is : 196
+The number of WRONG strands under this cluster is : 212
+##  The estimated original strand is :  --- 
+
+cluster with index 46 : the original strand to this cluster is 0 1 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 0 1 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 39 duplicates ::: orig index is 14
+0 1 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 67 duplicates ::: orig index is 38
+0 1 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 34 duplicates ::: orig index is 42
+0 1 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 32 duplicates ::: orig index is 44
+0 1 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 200 duplicates ::: orig index is 46
+0 1 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 33 duplicates ::: orig index is 47
+1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 68 duplicates ::: orig index is 62
+The number of strands under this cluster is : 473
+The number of CORRECT strands under this cluster is : 200
+The number of WRONG strands under this cluster is : 273
+##  The estimated original strand is :  --- 
+
+cluster with index 47 : the original strand to this cluster is 0 1 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 
+0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 ::: 77 duplicates ::: orig index is 15
+0 1 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 67 duplicates ::: orig index is 39
+0 1 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 49 duplicates ::: orig index is 43
+0 1 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 50 duplicates ::: orig index is 45
+0 1 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 24 duplicates ::: orig index is 46
+0 1 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 280 duplicates ::: orig index is 47
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 59 duplicates ::: orig index is 63
+The number of strands under this cluster is : 606
+The number of CORRECT strands under this cluster is : 280
+The number of WRONG strands under this cluster is : 326
+##  The estimated original strand is :  --- 
+
+cluster with index 48 : the original strand to this cluster is 0 1 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 1 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 69 duplicates ::: orig index is 16
+0 1 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 327 duplicates ::: orig index is 48
+0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 62 duplicates ::: orig index is 49
+0 1 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 89 duplicates ::: orig index is 50
+0 1 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 49 duplicates ::: orig index is 52
+0 1 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 71 duplicates ::: orig index is 56
+1 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 ::: 20 duplicates ::: orig index is 32
+The number of strands under this cluster is : 687
+The number of CORRECT strands under this cluster is : 327
+The number of WRONG strands under this cluster is : 360
+##  The estimated original strand is :  --- 
+
+cluster with index 49 : the original strand to this cluster is 0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 
+0 0 1 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 84 duplicates ::: orig index is 17
+0 1 0 0 0 1 1 0 0 1 1 0 1 0 0 0 0 1 ::: 79 duplicates ::: orig index is 33
+0 1 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 53 duplicates ::: orig index is 48
+0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 451 duplicates ::: orig index is 49
+0 1 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 44 duplicates ::: orig index is 51
+0 1 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 54 duplicates ::: orig index is 53
+0 1 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 16 duplicates ::: orig index is 57
+The number of strands under this cluster is : 781
+The number of CORRECT strands under this cluster is : 451
+The number of WRONG strands under this cluster is : 330
+##  The estimated original strand is :  --- 
+
+cluster with index 50 : the original strand to this cluster is 0 1 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 1 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 39 duplicates ::: orig index is 18
+0 1 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 38 duplicates ::: orig index is 48
+0 1 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 481 duplicates ::: orig index is 50
+0 1 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 43 duplicates ::: orig index is 51
+0 1 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 52 duplicates ::: orig index is 54
+0 1 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 76 duplicates ::: orig index is 58
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 ::: 8 duplicates ::: orig index is 34
+The number of strands under this cluster is : 737
+The number of CORRECT strands under this cluster is : 481
+The number of WRONG strands under this cluster is : 256
+##  The estimated original strand is :  --- 
+
+cluster with index 51 : the original strand to this cluster is 0 1 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 
+0 0 1 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 99 duplicates ::: orig index is 19
+0 1 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 72 duplicates ::: orig index is 35
+0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 62 duplicates ::: orig index is 49
+0 1 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 84 duplicates ::: orig index is 50
+0 1 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 333 duplicates ::: orig index is 51
+0 1 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 76 duplicates ::: orig index is 55
+0 1 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 31 duplicates ::: orig index is 59
+The number of strands under this cluster is : 757
+The number of CORRECT strands under this cluster is : 333
+The number of WRONG strands under this cluster is : 424
+##  The estimated original strand is :  --- 
+
+cluster with index 52 : the original strand to this cluster is 0 1 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 1 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 37 duplicates ::: orig index is 20
+0 1 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 20 duplicates ::: orig index is 36
+0 1 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 55 duplicates ::: orig index is 48
+0 1 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 279 duplicates ::: orig index is 52
+0 1 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 53 duplicates ::: orig index is 53
+0 1 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 43 duplicates ::: orig index is 54
+0 1 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 10 duplicates ::: orig index is 60
+The number of strands under this cluster is : 497
+The number of CORRECT strands under this cluster is : 279
+The number of WRONG strands under this cluster is : 218
+##  The estimated original strand is :  --- 
+
+cluster with index 53 : the original strand to this cluster is 0 1 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 
+0 0 1 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 12 duplicates ::: orig index is 21
+0 1 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 13 duplicates ::: orig index is 37
+0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 71 duplicates ::: orig index is 49
+0 1 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 51 duplicates ::: orig index is 52
+0 1 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 329 duplicates ::: orig index is 53
+0 1 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 57 duplicates ::: orig index is 55
+0 1 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 47 duplicates ::: orig index is 61
+The number of strands under this cluster is : 580
+The number of CORRECT strands under this cluster is : 329
+The number of WRONG strands under this cluster is : 251
+##  The estimated original strand is :  --- 
+
+cluster with index 54 : the original strand to this cluster is 0 1 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 1 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 80 duplicates ::: orig index is 22
+0 1 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 57 duplicates ::: orig index is 38
+0 1 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 81 duplicates ::: orig index is 50
+0 1 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 50 duplicates ::: orig index is 52
+0 1 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 332 duplicates ::: orig index is 54
+0 1 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 62 duplicates ::: orig index is 55
+1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 66 duplicates ::: orig index is 62
+The number of strands under this cluster is : 728
+The number of CORRECT strands under this cluster is : 332
+The number of WRONG strands under this cluster is : 396
+##  The estimated original strand is :  --- 
+
+cluster with index 55 : the original strand to this cluster is 0 1 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 
+0 0 1 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 69 duplicates ::: orig index is 23
+0 1 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 67 duplicates ::: orig index is 39
+0 1 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 40 duplicates ::: orig index is 51
+0 1 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 59 duplicates ::: orig index is 53
+0 1 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 40 duplicates ::: orig index is 54
+0 1 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 402 duplicates ::: orig index is 55
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 49 duplicates ::: orig index is 63
+The number of strands under this cluster is : 726
+The number of CORRECT strands under this cluster is : 402
+The number of WRONG strands under this cluster is : 324
+##  The estimated original strand is :  --- 
+
+cluster with index 56 : the original strand to this cluster is 0 1 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 
+0 0 1 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 51 duplicates ::: orig index is 24
+0 1 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 91 duplicates ::: orig index is 40
+0 1 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 37 duplicates ::: orig index is 48
+0 1 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 374 duplicates ::: orig index is 56
+0 1 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 16 duplicates ::: orig index is 57
+0 1 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 60 duplicates ::: orig index is 58
+0 1 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 11 duplicates ::: orig index is 60
+The number of strands under this cluster is : 640
+The number of CORRECT strands under this cluster is : 374
+The number of WRONG strands under this cluster is : 266
+##  The estimated original strand is :  --- 
+
+cluster with index 57 : the original strand to this cluster is 0 1 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 
+0 0 1 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 62 duplicates ::: orig index is 25
+0 1 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 38 duplicates ::: orig index is 41
+0 1 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 82 duplicates ::: orig index is 49
+0 1 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 44 duplicates ::: orig index is 56
+0 1 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 204 duplicates ::: orig index is 57
+0 1 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 35 duplicates ::: orig index is 59
+0 1 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 33 duplicates ::: orig index is 61
+The number of strands under this cluster is : 498
+The number of CORRECT strands under this cluster is : 204
+The number of WRONG strands under this cluster is : 294
+##  The estimated original strand is :  --- 
+
+cluster with index 58 : the original strand to this cluster is 0 1 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 1 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 17 duplicates ::: orig index is 26
+0 1 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 39 duplicates ::: orig index is 42
+0 1 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 55 duplicates ::: orig index is 50
+0 1 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 58 duplicates ::: orig index is 56
+0 1 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 393 duplicates ::: orig index is 58
+0 1 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 21 duplicates ::: orig index is 59
+1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 60 duplicates ::: orig index is 62
+The number of strands under this cluster is : 643
+The number of CORRECT strands under this cluster is : 393
+The number of WRONG strands under this cluster is : 250
+##  The estimated original strand is :  --- 
+
+cluster with index 59 : the original strand to this cluster is 0 1 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 
+0 0 1 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 94 duplicates ::: orig index is 27
+0 1 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 51 duplicates ::: orig index is 43
+0 1 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 41 duplicates ::: orig index is 51
+0 1 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 18 duplicates ::: orig index is 57
+0 1 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 48 duplicates ::: orig index is 58
+0 1 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 224 duplicates ::: orig index is 59
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 64 duplicates ::: orig index is 63
+The number of strands under this cluster is : 540
+The number of CORRECT strands under this cluster is : 224
+The number of WRONG strands under this cluster is : 316
+##  The estimated original strand is :  --- 
+
+cluster with index 60 : the original strand to this cluster is 0 1 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 
+0 0 1 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 76 duplicates ::: orig index is 28
+0 1 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 38 duplicates ::: orig index is 44
+0 1 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 51 duplicates ::: orig index is 52
+0 1 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 65 duplicates ::: orig index is 56
+0 1 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 194 duplicates ::: orig index is 60
+0 1 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 39 duplicates ::: orig index is 61
+1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 50 duplicates ::: orig index is 62
+The number of strands under this cluster is : 513
+The number of CORRECT strands under this cluster is : 194
+The number of WRONG strands under this cluster is : 319
+##  The estimated original strand is :  --- 
+
+cluster with index 61 : the original strand to this cluster is 0 1 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 
+0 0 1 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 60 duplicates ::: orig index is 29
+0 1 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 32 duplicates ::: orig index is 45
+0 1 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 53 duplicates ::: orig index is 53
+0 1 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 20 duplicates ::: orig index is 57
+0 1 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 12 duplicates ::: orig index is 60
+0 1 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 235 duplicates ::: orig index is 61
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 58 duplicates ::: orig index is 63
+The number of strands under this cluster is : 470
+The number of CORRECT strands under this cluster is : 235
+The number of WRONG strands under this cluster is : 235
+##  The estimated original strand is :  --- 
+
+cluster with index 62 : the original strand to this cluster is 1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 
+0 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 54 duplicates ::: orig index is 30
+0 1 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 29 duplicates ::: orig index is 46
+0 1 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 60 duplicates ::: orig index is 54
+0 1 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 66 duplicates ::: orig index is 58
+0 1 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 16 duplicates ::: orig index is 60
+1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 317 duplicates ::: orig index is 62
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 47 duplicates ::: orig index is 63
+The number of strands under this cluster is : 589
+The number of CORRECT strands under this cluster is : 317
+The number of WRONG strands under this cluster is : 272
+##  The estimated original strand is :  --- 
+
+cluster with index 63 : the original strand to this cluster is 1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+0 1 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 51 duplicates ::: orig index is 47
+0 1 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 79 duplicates ::: orig index is 55
+0 1 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 17 duplicates ::: orig index is 59
+0 1 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 50 duplicates ::: orig index is 61
+1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 61 duplicates ::: orig index is 62
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 ::: 11 duplicates ::: orig index is 31
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 323 duplicates ::: orig index is 63
+The number of strands under this cluster is : 592
+The number of CORRECT strands under this cluster is : 323
+The number of WRONG strands under this cluster is : 269
+##  The estimated original strand is :  --- 
+
+cluster with index 64 : the original strand to this cluster is 1 0 0 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 
+1 0 0 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 452 duplicates ::: orig index is 64
+1 0 0 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 49 duplicates ::: orig index is 65
+1 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 54 duplicates ::: orig index is 66
+1 0 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 16 duplicates ::: orig index is 68
+1 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 54 duplicates ::: orig index is 72
+1 0 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 62 duplicates ::: orig index is 80
+1 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 25 duplicates ::: orig index is 96
+The number of strands under this cluster is : 712
+The number of CORRECT strands under this cluster is : 452
+The number of WRONG strands under this cluster is : 260
+##  The estimated original strand is :  --- 
+
+cluster with index 65 : the original strand to this cluster is 1 0 0 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 
+1 0 0 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 63 duplicates ::: orig index is 64
+1 0 0 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 314 duplicates ::: orig index is 65
+1 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 45 duplicates ::: orig index is 67
+1 0 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 54 duplicates ::: orig index is 69
+1 0 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 16 duplicates ::: orig index is 73
+1 0 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 28 duplicates ::: orig index is 81
+1 1 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 33 duplicates ::: orig index is 97
+The number of strands under this cluster is : 553
+The number of CORRECT strands under this cluster is : 314
+The number of WRONG strands under this cluster is : 239
+##  The estimated original strand is :  --- 
+
+cluster with index 66 : the original strand to this cluster is 1 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 
+1 0 0 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 60 duplicates ::: orig index is 64
+1 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 446 duplicates ::: orig index is 66
+1 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 43 duplicates ::: orig index is 67
+1 0 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 31 duplicates ::: orig index is 70
+1 0 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 61 duplicates ::: orig index is 74
+1 0 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 39 duplicates ::: orig index is 82
+1 1 0 0 1 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 61 duplicates ::: orig index is 98
+The number of strands under this cluster is : 741
+The number of CORRECT strands under this cluster is : 446
+The number of WRONG strands under this cluster is : 295
+##  The estimated original strand is :  --- 
+
+cluster with index 67 : the original strand to this cluster is 1 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 
+1 0 0 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 48 duplicates ::: orig index is 65
+1 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 57 duplicates ::: orig index is 66
+1 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 291 duplicates ::: orig index is 67
+1 0 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 17 duplicates ::: orig index is 71
+1 0 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 45 duplicates ::: orig index is 75
+1 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 23 duplicates ::: orig index is 83
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 47 duplicates ::: orig index is 99
+The number of strands under this cluster is : 528
+The number of CORRECT strands under this cluster is : 291
+The number of WRONG strands under this cluster is : 237
+##  The estimated original strand is :  --- 
+
+cluster with index 68 : the original strand to this cluster is 1 0 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 
+1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 ::: 15 duplicates ::: orig index is 100
+1 0 0 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 63 duplicates ::: orig index is 64
+1 0 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 160 duplicates ::: orig index is 68
+1 0 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 34 duplicates ::: orig index is 69
+1 0 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 29 duplicates ::: orig index is 70
+1 0 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 34 duplicates ::: orig index is 76
+1 0 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 65 duplicates ::: orig index is 84
+The number of strands under this cluster is : 400
+The number of CORRECT strands under this cluster is : 160
+The number of WRONG strands under this cluster is : 240
+##  The estimated original strand is :  --- 
+
+cluster with index 69 : the original strand to this cluster is 1 0 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 
+1 0 0 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 65 duplicates ::: orig index is 65
+1 0 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 17 duplicates ::: orig index is 68
+1 0 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 257 duplicates ::: orig index is 69
+1 0 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 25 duplicates ::: orig index is 71
+1 0 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 23 duplicates ::: orig index is 77
+1 0 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 16 duplicates ::: orig index is 85
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 38 duplicates ::: orig index is 101
+The number of strands under this cluster is : 441
+The number of CORRECT strands under this cluster is : 257
+The number of WRONG strands under this cluster is : 184
+##  The estimated original strand is :  --- 
+
+cluster with index 70 : the original strand to this cluster is 1 0 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 
+1 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 59 duplicates ::: orig index is 66
+1 0 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 13 duplicates ::: orig index is 68
+1 0 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 212 duplicates ::: orig index is 70
+1 0 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 14 duplicates ::: orig index is 71
+1 0 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 62 duplicates ::: orig index is 78
+1 0 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 50 duplicates ::: orig index is 86
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 20 duplicates ::: orig index is 102
+The number of strands under this cluster is : 430
+The number of CORRECT strands under this cluster is : 212
+The number of WRONG strands under this cluster is : 218
+##  The estimated original strand is :  --- 
+
+cluster with index 71 : the original strand to this cluster is 1 0 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 ::: 74 duplicates ::: orig index is 103
+1 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 47 duplicates ::: orig index is 67
+1 0 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 41 duplicates ::: orig index is 69
+1 0 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 27 duplicates ::: orig index is 70
+1 0 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 182 duplicates ::: orig index is 71
+1 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 16 duplicates ::: orig index is 79
+1 0 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 19 duplicates ::: orig index is 87
+The number of strands under this cluster is : 406
+The number of CORRECT strands under this cluster is : 182
+The number of WRONG strands under this cluster is : 224
+##  The estimated original strand is :  --- 
+
+cluster with index 72 : the original strand to this cluster is 1 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 
+1 0 0 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 63 duplicates ::: orig index is 64
+1 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 432 duplicates ::: orig index is 72
+1 0 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 18 duplicates ::: orig index is 73
+1 0 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 60 duplicates ::: orig index is 74
+1 0 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 29 duplicates ::: orig index is 76
+1 0 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 67 duplicates ::: orig index is 88
+The number of strands under this cluster is : 669
+The number of CORRECT strands under this cluster is : 432
+The number of WRONG strands under this cluster is : 237
+##  The estimated original strand is :  --- 
+
+cluster with index 73 : the original strand to this cluster is 1 0 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 
+1 0 0 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 46 duplicates ::: orig index is 65
+1 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 63 duplicates ::: orig index is 72
+1 0 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 183 duplicates ::: orig index is 73
+1 0 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 40 duplicates ::: orig index is 75
+1 0 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 29 duplicates ::: orig index is 77
+1 0 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 61 duplicates ::: orig index is 89
+The number of strands under this cluster is : 422
+The number of CORRECT strands under this cluster is : 183
+The number of WRONG strands under this cluster is : 239
+##  The estimated original strand is :  --- 
+
+cluster with index 74 : the original strand to this cluster is 1 0 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 
+1 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 47 duplicates ::: orig index is 66
+1 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 62 duplicates ::: orig index is 72
+1 0 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 469 duplicates ::: orig index is 74
+1 0 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 45 duplicates ::: orig index is 75
+1 0 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 61 duplicates ::: orig index is 78
+1 0 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 63 duplicates ::: orig index is 90
+The number of strands under this cluster is : 747
+The number of CORRECT strands under this cluster is : 469
+The number of WRONG strands under this cluster is : 278
+##  The estimated original strand is :  --- 
+
+cluster with index 75 : the original strand to this cluster is 1 0 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 
+1 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 48 duplicates ::: orig index is 67
+1 0 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 19 duplicates ::: orig index is 73
+1 0 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 64 duplicates ::: orig index is 74
+1 0 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 324 duplicates ::: orig index is 75
+1 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 19 duplicates ::: orig index is 79
+1 0 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 79 duplicates ::: orig index is 91
+The number of strands under this cluster is : 553
+The number of CORRECT strands under this cluster is : 324
+The number of WRONG strands under this cluster is : 229
+##  The estimated original strand is :  --- 
+
+cluster with index 76 : the original strand to this cluster is 1 0 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 
+1 0 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 3 duplicates ::: orig index is 68
+1 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 58 duplicates ::: orig index is 72
+1 0 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 251 duplicates ::: orig index is 76
+1 0 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 21 duplicates ::: orig index is 77
+1 0 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 62 duplicates ::: orig index is 78
+1 0 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 42 duplicates ::: orig index is 92
+The number of strands under this cluster is : 437
+The number of CORRECT strands under this cluster is : 251
+The number of WRONG strands under this cluster is : 186
+##  The estimated original strand is :  --- 
+
+cluster with index 77 : the original strand to this cluster is 1 0 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 
+1 0 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 55 duplicates ::: orig index is 69
+1 0 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 21 duplicates ::: orig index is 73
+1 0 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 48 duplicates ::: orig index is 76
+1 0 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 160 duplicates ::: orig index is 77
+1 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 28 duplicates ::: orig index is 79
+1 0 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 11 duplicates ::: orig index is 93
+The number of strands under this cluster is : 323
+The number of CORRECT strands under this cluster is : 160
+The number of WRONG strands under this cluster is : 163
+##  The estimated original strand is :  --- 
+
+cluster with index 78 : the original strand to this cluster is 1 0 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 
+1 0 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 27 duplicates ::: orig index is 70
+1 0 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 81 duplicates ::: orig index is 74
+1 0 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 34 duplicates ::: orig index is 76
+1 0 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 439 duplicates ::: orig index is 78
+1 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 16 duplicates ::: orig index is 79
+1 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 57 duplicates ::: orig index is 94
+The number of strands under this cluster is : 654
+The number of CORRECT strands under this cluster is : 439
+The number of WRONG strands under this cluster is : 215
+##  The estimated original strand is :  --- 
+
+cluster with index 79 : the original strand to this cluster is 1 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 
+1 0 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 29 duplicates ::: orig index is 71
+1 0 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 56 duplicates ::: orig index is 75
+1 0 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 16 duplicates ::: orig index is 77
+1 0 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 72 duplicates ::: orig index is 78
+1 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 197 duplicates ::: orig index is 79
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 40 duplicates ::: orig index is 95
+The number of strands under this cluster is : 410
+The number of CORRECT strands under this cluster is : 197
+The number of WRONG strands under this cluster is : 213
+##  The estimated original strand is :  --- 
+
+cluster with index 80 : the original strand to this cluster is 1 0 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 
+1 0 0 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 47 duplicates ::: orig index is 64
+1 0 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 336 duplicates ::: orig index is 80
+1 0 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 17 duplicates ::: orig index is 81
+1 0 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 40 duplicates ::: orig index is 82
+1 0 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 72 duplicates ::: orig index is 84
+1 0 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 61 duplicates ::: orig index is 88
+The number of strands under this cluster is : 573
+The number of CORRECT strands under this cluster is : 336
+The number of WRONG strands under this cluster is : 237
+##  The estimated original strand is :  --- 
+
+cluster with index 81 : the original strand to this cluster is 1 0 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 
+1 0 0 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 48 duplicates ::: orig index is 65
+1 0 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 64 duplicates ::: orig index is 80
+1 0 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 178 duplicates ::: orig index is 81
+1 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 43 duplicates ::: orig index is 83
+1 0 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 8 duplicates ::: orig index is 85
+1 0 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 51 duplicates ::: orig index is 89
+The number of strands under this cluster is : 392
+The number of CORRECT strands under this cluster is : 178
+The number of WRONG strands under this cluster is : 214
+##  The estimated original strand is :  --- 
+
+cluster with index 82 : the original strand to this cluster is 1 0 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 
+1 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 69 duplicates ::: orig index is 66
+1 0 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 46 duplicates ::: orig index is 80
+1 0 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 246 duplicates ::: orig index is 82
+1 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 36 duplicates ::: orig index is 83
+1 0 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 43 duplicates ::: orig index is 86
+1 0 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 60 duplicates ::: orig index is 90
+The number of strands under this cluster is : 500
+The number of CORRECT strands under this cluster is : 246
+The number of WRONG strands under this cluster is : 254
+##  The estimated original strand is :  --- 
+
+cluster with index 83 : the original strand to this cluster is 1 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 
+1 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 39 duplicates ::: orig index is 67
+1 0 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 22 duplicates ::: orig index is 81
+1 0 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 28 duplicates ::: orig index is 82
+1 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 280 duplicates ::: orig index is 83
+1 0 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 25 duplicates ::: orig index is 87
+1 0 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 49 duplicates ::: orig index is 91
+The number of strands under this cluster is : 443
+The number of CORRECT strands under this cluster is : 280
+The number of WRONG strands under this cluster is : 163
+##  The estimated original strand is :  --- 
+
+cluster with index 84 : the original strand to this cluster is 1 0 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 
+1 0 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 14 duplicates ::: orig index is 68
+1 0 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 42 duplicates ::: orig index is 80
+1 0 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 468 duplicates ::: orig index is 84
+1 0 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 13 duplicates ::: orig index is 85
+1 0 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 48 duplicates ::: orig index is 86
+1 0 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 33 duplicates ::: orig index is 92
+The number of strands under this cluster is : 618
+The number of CORRECT strands under this cluster is : 468
+The number of WRONG strands under this cluster is : 150
+##  The estimated original strand is :  --- 
+
+cluster with index 85 : the original strand to this cluster is 1 0 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 
+1 0 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 47 duplicates ::: orig index is 69
+1 0 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 23 duplicates ::: orig index is 81
+1 0 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 71 duplicates ::: orig index is 84
+1 0 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 124 duplicates ::: orig index is 85
+1 0 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 22 duplicates ::: orig index is 87
+1 0 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 23 duplicates ::: orig index is 93
+The number of strands under this cluster is : 310
+The number of CORRECT strands under this cluster is : 124
+The number of WRONG strands under this cluster is : 186
+##  The estimated original strand is :  --- 
+
+cluster with index 86 : the original strand to this cluster is 1 0 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 
+1 0 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 21 duplicates ::: orig index is 70
+1 0 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 24 duplicates ::: orig index is 82
+1 0 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 77 duplicates ::: orig index is 84
+1 0 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 358 duplicates ::: orig index is 86
+1 0 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 14 duplicates ::: orig index is 87
+1 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 58 duplicates ::: orig index is 94
+The number of strands under this cluster is : 552
+The number of CORRECT strands under this cluster is : 358
+The number of WRONG strands under this cluster is : 194
+##  The estimated original strand is :  --- 
+
+cluster with index 87 : the original strand to this cluster is 1 0 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 
+1 0 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 15 duplicates ::: orig index is 71
+1 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 44 duplicates ::: orig index is 83
+1 0 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 12 duplicates ::: orig index is 85
+1 0 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 41 duplicates ::: orig index is 86
+1 0 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 164 duplicates ::: orig index is 87
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 43 duplicates ::: orig index is 95
+The number of strands under this cluster is : 319
+The number of CORRECT strands under this cluster is : 164
+The number of WRONG strands under this cluster is : 155
+##  The estimated original strand is :  --- 
+
+cluster with index 88 : the original strand to this cluster is 1 0 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 
+1 0 0 1 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 49 duplicates ::: orig index is 72
+1 0 1 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 43 duplicates ::: orig index is 80
+1 0 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 386 duplicates ::: orig index is 88
+1 0 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 69 duplicates ::: orig index is 89
+1 0 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 54 duplicates ::: orig index is 90
+1 0 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 51 duplicates ::: orig index is 92
+The number of strands under this cluster is : 652
+The number of CORRECT strands under this cluster is : 386
+The number of WRONG strands under this cluster is : 266
+##  The estimated original strand is :  --- 
+
+cluster with index 89 : the original strand to this cluster is 1 0 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 
+1 0 0 1 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 16 duplicates ::: orig index is 73
+1 0 1 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 28 duplicates ::: orig index is 81
+1 0 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 55 duplicates ::: orig index is 88
+1 0 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 382 duplicates ::: orig index is 89
+1 0 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 71 duplicates ::: orig index is 91
+1 0 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 23 duplicates ::: orig index is 93
+The number of strands under this cluster is : 575
+The number of CORRECT strands under this cluster is : 382
+The number of WRONG strands under this cluster is : 193
+##  The estimated original strand is :  --- 
+
+cluster with index 90 : the original strand to this cluster is 1 0 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 
+1 0 0 1 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 67 duplicates ::: orig index is 74
+1 0 1 0 0 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 33 duplicates ::: orig index is 82
+1 0 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 50 duplicates ::: orig index is 88
+1 0 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 465 duplicates ::: orig index is 90
+1 0 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 66 duplicates ::: orig index is 91
+1 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 55 duplicates ::: orig index is 94
+The number of strands under this cluster is : 736
+The number of CORRECT strands under this cluster is : 465
+The number of WRONG strands under this cluster is : 271
+##  The estimated original strand is :  --- 
+
+cluster with index 91 : the original strand to this cluster is 1 0 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 
+1 0 0 1 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 40 duplicates ::: orig index is 75
+1 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0 0 1 ::: 46 duplicates ::: orig index is 83
+1 0 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 49 duplicates ::: orig index is 89
+1 0 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 62 duplicates ::: orig index is 90
+1 0 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 398 duplicates ::: orig index is 91
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 40 duplicates ::: orig index is 95
+The number of strands under this cluster is : 635
+The number of CORRECT strands under this cluster is : 398
+The number of WRONG strands under this cluster is : 237
+##  The estimated original strand is :  --- 
+
+cluster with index 92 : the original strand to this cluster is 1 0 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 
+1 0 0 1 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 36 duplicates ::: orig index is 76
+1 0 1 0 1 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 79 duplicates ::: orig index is 84
+1 0 1 1 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 51 duplicates ::: orig index is 88
+1 0 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 307 duplicates ::: orig index is 92
+1 0 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 26 duplicates ::: orig index is 93
+1 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 79 duplicates ::: orig index is 94
+The number of strands under this cluster is : 578
+The number of CORRECT strands under this cluster is : 307
+The number of WRONG strands under this cluster is : 271
+##  The estimated original strand is :  --- 
+
+cluster with index 93 : the original strand to this cluster is 1 0 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 
+1 0 0 1 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 26 duplicates ::: orig index is 77
+1 0 1 0 1 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 9 duplicates ::: orig index is 85
+1 0 1 1 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 43 duplicates ::: orig index is 89
+1 0 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 41 duplicates ::: orig index is 92
+1 0 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 169 duplicates ::: orig index is 93
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 33 duplicates ::: orig index is 95
+The number of strands under this cluster is : 321
+The number of CORRECT strands under this cluster is : 169
+The number of WRONG strands under this cluster is : 152
+##  The estimated original strand is :  --- 
+
+cluster with index 94 : the original strand to this cluster is 1 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 
+1 0 0 1 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 77 duplicates ::: orig index is 78
+1 0 1 0 1 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 60 duplicates ::: orig index is 86
+1 0 1 1 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 71 duplicates ::: orig index is 90
+1 0 1 1 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 45 duplicates ::: orig index is 92
+1 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 402 duplicates ::: orig index is 94
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 32 duplicates ::: orig index is 95
+The number of strands under this cluster is : 687
+The number of CORRECT strands under this cluster is : 402
+The number of WRONG strands under this cluster is : 285
+##  The estimated original strand is :  --- 
+
+cluster with index 95 : the original strand to this cluster is 1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+1 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 ::: 21 duplicates ::: orig index is 79
+1 0 1 1 0 0 0 0 1 0 0 1 1 0 0 0 0 1 ::: 27 duplicates ::: orig index is 87
+1 0 1 1 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 52 duplicates ::: orig index is 91
+1 0 1 1 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 18 duplicates ::: orig index is 93
+1 1 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 62 duplicates ::: orig index is 94
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 275 duplicates ::: orig index is 95
+The number of strands under this cluster is : 455
+The number of CORRECT strands under this cluster is : 275
+The number of WRONG strands under this cluster is : 180
+##  The estimated original strand is :  --- 
+
+cluster with index 96 : the original strand to this cluster is 1 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 
+1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 ::: 13 duplicates ::: orig index is 100
+1 0 0 0 0 0 1 0 1 0 1 1 0 0 0 0 0 1 ::: 81 duplicates ::: orig index is 64
+1 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 234 duplicates ::: orig index is 96
+1 1 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 37 duplicates ::: orig index is 97
+1 1 0 0 1 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 62 duplicates ::: orig index is 98
+The number of strands under this cluster is : 427
+The number of CORRECT strands under this cluster is : 234
+The number of WRONG strands under this cluster is : 193
+##  The estimated original strand is :  --- 
+
+cluster with index 97 : the original strand to this cluster is 1 1 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 
+1 0 0 0 0 1 0 0 0 1 1 0 1 0 0 0 0 1 ::: 51 duplicates ::: orig index is 65
+1 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 25 duplicates ::: orig index is 96
+1 1 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 208 duplicates ::: orig index is 97
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 70 duplicates ::: orig index is 99
+The number of strands under this cluster is : 354
+The number of CORRECT strands under this cluster is : 208
+The number of WRONG strands under this cluster is : 146
+##  The estimated original strand is :  --- 
+
+cluster with index 98 : the original strand to this cluster is 1 1 0 0 1 0 0 0 1 0 1 1 0 0 0 0 0 1 
+1 0 0 0 0 1 1 0 0 1 1 1 0 0 0 0 0 1 ::: 75 duplicates ::: orig index is 66
+1 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 44 duplicates ::: orig index is 96
+1 1 0 0 1 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 375 duplicates ::: orig index is 98
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 58 duplicates ::: orig index is 99
+The number of strands under this cluster is : 552
+The number of CORRECT strands under this cluster is : 375
+The number of WRONG strands under this cluster is : 177
+##  The estimated original strand is :  --- 
+
+cluster with index 99 : the original strand to this cluster is 1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 ::: 61 duplicates ::: orig index is 103
+1 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 1 ::: 44 duplicates ::: orig index is 67
+1 1 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 41 duplicates ::: orig index is 97
+1 1 0 0 1 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 54 duplicates ::: orig index is 98
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 274 duplicates ::: orig index is 99
+The number of strands under this cluster is : 474
+The number of CORRECT strands under this cluster is : 274
+The number of WRONG strands under this cluster is : 200
+##  The estimated original strand is :  --- 
+
+cluster with index 100 : the original strand to this cluster is 1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 ::: 95 duplicates ::: orig index is 100
+1 0 0 0 1 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 8 duplicates ::: orig index is 68
+1 1 0 0 0 0 1 0 0 1 1 1 0 0 0 0 0 1 ::: 27 duplicates ::: orig index is 96
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 49 duplicates ::: orig index is 101
+The number of strands under this cluster is : 179
+The number of CORRECT strands under this cluster is : 95
+The number of WRONG strands under this cluster is : 84
+##  The estimated original strand is :  --- 
+
+cluster with index 101 : the original strand to this cluster is 1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 ::: 70 duplicates ::: orig index is 103
+1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 ::: 18 duplicates ::: orig index is 100
+1 0 0 0 1 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 51 duplicates ::: orig index is 69
+1 1 0 0 0 1 0 0 1 0 1 0 1 0 0 0 0 1 ::: 29 duplicates ::: orig index is 97
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 261 duplicates ::: orig index is 101
+The number of strands under this cluster is : 429
+The number of CORRECT strands under this cluster is : 261
+The number of WRONG strands under this cluster is : 168
+##  The estimated original strand is :  --- 
+
+cluster with index 102 : the original strand to this cluster is 1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 ::: 57 duplicates ::: orig index is 103
+1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 0 0 ::: 7 duplicates ::: orig index is 100
+1 0 0 0 1 1 1 0 1 0 1 1 0 0 0 0 0 1 ::: 25 duplicates ::: orig index is 70
+1 1 0 0 1 0 0 0 1 0 1 1 0 0 0 0 0 1 ::: 60 duplicates ::: orig index is 98
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 122 duplicates ::: orig index is 102
+The number of strands under this cluster is : 271
+The number of CORRECT strands under this cluster is : 122
+The number of WRONG strands under this cluster is : 149
+##  The estimated original strand is :  --- 
+
+cluster with index 103 : the original strand to this cluster is 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 ::: 465 duplicates ::: orig index is 103
+1 0 0 1 0 0 0 0 0 1 0 1 1 0 0 0 0 1 ::: 20 duplicates ::: orig index is 71
+1 1 1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 ::: 73 duplicates ::: orig index is 99
+The number of strands under this cluster is : 558
+The number of CORRECT strands under this cluster is : 465
+The number of WRONG strands under this cluster is : 93
+##  The estimated original strand is :  --- 
+

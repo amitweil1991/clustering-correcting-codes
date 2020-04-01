@@ -6,6 +6,8 @@
 #define CLUSTERING_CORRECTING_CODES_PROJECT_ENCODING_ALGORITHIM_H
 
 #include "encoded_strand_binary.h"
+#include "errorIdentiﬁcationInCluster.h"
+
 
 
 /*!
