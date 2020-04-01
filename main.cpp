@@ -584,6 +584,24 @@ void printDataToFile(errorIdentiﬁcationInCluster& clusters, unordered_map<int,
     }
 }
 
+void printFixErrorsOutputs(errorIdentiﬁcationInCluster& clusters, string fileName){
+    std::ofstream myfile;
+    myfile.open(fileName);
+
+    for (int j = 0; j < clusters.getMap().size(); ++j) {
+
+        auto it = clusters.getMap().find(j);
+        if (it == clusters.getMap().end()) {
+            myfile << "Simulation test:: Can't find the Key " << j << " in the clusters's hash" << endl;
+        }
+        else {
+            for (int i = 0; i < it->second.getEstimatedOrigStrand().size(); ++i) {
+                myfile << it->second.getEstimatedOrigStrand()[i];
+            }
+            myfile << endl;
+        }
+    }
+}
 
 int main(int argc, char** argv){
 
@@ -689,6 +707,8 @@ int main(int argc, char** argv){
 //    printClusters(clusters, encoded_strands);
 
     printDataToFile(clusters, encoded_strands_to_elon, "status_after_fix_errors.txt");
+
+    printFixErrorsOutputs(clusters, "status_to_fix_errors_output.txt");
 
     ///TODO
    DecodingAlgorithim(
