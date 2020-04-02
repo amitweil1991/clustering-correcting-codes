@@ -494,7 +494,7 @@ void printClusters(errorIdentiﬁcationInCluster& clusters, unordered_map<int,en
         encoded_strand_binary the_orig_strand = map_it->second;
         auto it = clusters.getMap().find(j);
         if(it == clusters.getMap().end()){
-            cout << "Simulation test:: Can't find the Key " << j << " in the clusters's hash" << endl;
+            cout << "printClusters:: Can't find the Key " << j << " in the clusters's hash" << endl;
         }
         else{
             cout << "cluster with index " << j << " : the original strand to this cluster is ";
@@ -536,7 +536,7 @@ void printClusters(errorIdentiﬁcationInCluster& clusters, unordered_map<int,en
 void printDataToFile(errorIdentiﬁcationInCluster& clusters, unordered_map<int,encoded_strand_binary>& map, string fileName){
     std::ofstream myfile;
     myfile.open(fileName);
-    /// "/Users/elongrubman/Desktop/"
+
     std::map<vector<int>, int> num_of_duplicates_from_each_strand;
 
     for (int j = 0; j < clusters.getMap().size(); ++j) {
@@ -545,7 +545,7 @@ void printDataToFile(errorIdentiﬁcationInCluster& clusters, unordered_map<int,
         encoded_strand_binary the_orig_strand = map_it->second;
         auto it = clusters.getMap().find(j);
         if(it == clusters.getMap().end()){
-            myfile << "Simulation test:: Can't find the Key " << j << " in the clusters's hash" << endl;
+            myfile << "printDataToFile:: Can't find the Key " << j << " in the clusters's hash" << endl;
         }
         else{
             myfile << "cluster with index " << j << " : the original strand to this cluster is ";
@@ -592,7 +592,7 @@ void printFixErrorsOutputs(errorIdentiﬁcationInCluster& clusters, string fileN
 
         auto it = clusters.getMap().find(j);
         if (it == clusters.getMap().end()) {
-            myfile << "Simulation test:: Can't find the Key " << j << " in the clusters's hash" << endl;
+            myfile << "printFixErrorsOutputs:: Can't find the Key " << j << " in the clusters's hash" << endl;
         }
         else {
             for (int i = 0; i < it->second.getEstimatedOrigStrand().size(); ++i) {
@@ -602,6 +602,24 @@ void printFixErrorsOutputs(errorIdentiﬁcationInCluster& clusters, string fileN
         }
     }
 }
+
+void makeMapFromFixErrorsOutput(errorIdentiﬁcationInCluster& clusters, unordered_map<int,encoded_strand_binary>& strands_after_fix_errors){
+    for (int j = 0; j < clusters.getMap().size(); ++j) {
+
+        auto it = clusters.getMap().find(j);
+        if (it == clusters.getMap().end()) {
+            cout << "makeMapFromFixErrorsOutput:: Can't find the Key " << j << " in the clusters's hash" << endl;
+        }
+        else {
+            vector<int> int_strand;
+            convertCharVecToIntVec(it->second.getEstimatedOrigStrand(), int_strand);
+            encoded_strand_binary output_strand(int_strand, false);
+            pair<int, encoded_strand_binary> pair(j, output_strand);
+            strands_after_fix_errors.insert(pair);
+        }
+    }
+}
+
 
 int main(int argc, char** argv){
 
@@ -709,6 +727,10 @@ int main(int argc, char** argv){
     printDataToFile(clusters, encoded_strands_to_elon, "status_after_fix_errors.txt");
 
     printFixErrorsOutputs(clusters, "status_to_fix_errors_output.txt");
+
+    unordered_map<int,encoded_strand_binary> strands_after_fix_errors; /// <----- use it for decoding!
+
+    makeMapFromFixErrorsOutput(clusters, strands_after_fix_errors);
 
     ///TODO
    DecodingAlgorithim(
