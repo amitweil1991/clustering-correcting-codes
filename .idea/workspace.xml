@@ -13,7 +13,10 @@
   <component name="ChangeListManager">
     <list default="true" id="542b8a8c-7ec6-49f8-9335-b877f8c75fc9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encoded_strand_binary.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main" beforeDir="false" afterPath="$PROJECT_DIR$/main" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/strand.cpp" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +48,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="clustering_correcting_codes_project" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="clustering_correcting_codes_project" TARGET_NAME="clustering_correcting_codes_project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="clustering_correcting_codes_project" RUN_TARGET_NAME="clustering_correcting_codes_project">
+    <configuration name="clustering_correcting_codes_project" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="1 2 98 M false $PROJECT_DIR$/test_file_updated.txt" PASS_PARENT_ENVS_2="true" PROJECT_NAME="clustering_correcting_codes_project" TARGET_NAME="clustering_correcting_codes_project" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="clustering_correcting_codes_project" RUN_TARGET_NAME="clustering_correcting_codes_project">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -61,7 +64,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585757273137</updated>
-      <workItem from="1585757277925" duration="3253000" />
+      <workItem from="1585757277925" duration="3650000" />
+      <workItem from="1585910424702" duration="1718000" />
     </task>
     <servers />
   </component>
@@ -73,7 +77,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
