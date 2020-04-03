@@ -7,10 +7,15 @@ in order to run the test, you need to run it from CMD with the following command
 './main 1 2 98 M false test_file_updated.txt'
 
 arg 1 - raw
+
 arg 2 - tao
+
 arg 3 - strands data length
+
 arg 4 - assumption (majority/dominance)
+
 arg 5 - boolean denoting wether we're using brute force manner in the encoding algorithim (further explanation regarding this is in the paper).
+
 arg 6 - the test input file (should be located within the project).
 
 output files:
