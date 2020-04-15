@@ -20,7 +20,7 @@ of these codes which uses only a single bit of redundancy".
 
 ____________________________________________________________________________________
 
-in order to use the code:
+# in order to use the code:
 
 1. to compile you need to use 'g++ -std=c++14 -o main main.cpp' command.
 
@@ -42,8 +42,9 @@ in order to use the code:
         arg 6 - the test input file (should be located within the project, and the name should be test_file_updated.txt).
 
 4. the algorithims's output files will be located in the project directory (below is the explanation regarding the output files).
+____________________________________________________________________________________
 
-further explanation regarding the system arguments:
+# further explanation regarding the system arguments:
 
 raw & tao - a system parameters which are used to make assumptions about output strands (the strands that we pull out from the DNA compound). from the article: "Each output strand in the set G is a copy of one of the input strands in S, however with some potential errors. A DNA-based storage system is called a (tao,raw)-DNA system if it satisfies the following property: If the output strand (ind',u') ∈ G is a noisy copy of the input strand (ind,u) ∈ S, then dH(ind, ind') <= tao and
 dH(u,u') <= raw. That is, the index field has at most tao Hamming errors while the data field has at most raw Hamming errors."
@@ -54,7 +55,7 @@ as the majority assumption. Let the cluster C(i) be the group of all strands rea
 ____________________________________________________________________________________
 
 
-output files:
+# output files:
 
 1. results_before_encoding.txt - the strands before the encoding algorithim (sorted by the index of the strand).
 
