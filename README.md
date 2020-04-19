@@ -76,6 +76,8 @@ cluster 2 1111, 1001, 1100
 majority vector for cluster 1 : 1000
 majority vector for cluster 2 : 1101  
 
+** under certain circumstances we aspire that status_to_fix_errors_output.txt would be equal to results_after_decoding.txt, though its
+not certain for it to happen and it depends on the data the program recives.
      
         
 
